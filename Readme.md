@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Регина Армянинова](https://up.htmlacademy.ru/adaptive/19/user/784085).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/scorn_da).
 
 ---
 
