@@ -8,12 +8,12 @@
     <header class="page-header">
       <nav class="main-navigation">
         <div class="container">
-          <div class="main-navigation__logo">
+          <div class="main-navigation__header">
             <a class="main-navigation__logo-link" href="index.html">
               <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
             </a>
+            <button class="main-navigation__toggle" type="button">Открыть меню</button>
           </div>
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
@@ -35,7 +35,7 @@
     </header>
     <main class="page-main">
       <section class="contest-block">
-        <div class="contest-block--background">
+        <div class="contest-block__background contest-block__background--1">
           <div class="container">
             <h1 class="contest-block__caption">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
@@ -45,20 +45,20 @@
         </div>
         <form class="contest-block__form form" action="https://echo.htmlacademy.ru" method="get">
           <div class="container">
-            <div class="form__surname">
+            <p class="form__surname">
               <label class="form__surname-label label-field" for="form-surname">Фамилия:</label>
-              <input class="form__surname-input" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
+              <input class="form__surname-input input-field" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
             </div>
             <div class="form__name">
               <label class="form__name-label label-field" for="form-name">Имя:</label>
-              <input class="form__name-input" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя *" required>
+              <input class="form__name-input input-field" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="form__patronymic">
               <label class="form__patronymic-label label-field" for="form-patronymic">Отчество:</label>
-              <input class="form__patronymic-input" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
+              <input class="form__patronymic-input input-field" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
-          <div class="form--background">
+          <div class="form__background form__background--1">
             <div class="container">
               <p class="form__text">Ваши безбашенные достижения в путешествии</p>
               <div class="form__achievements">
@@ -80,11 +80,11 @@
           <div class="container">
             <div class="form__phone">
               <label class="form__phone-label label-field" for="form-phone">Номер телефона</label>
-              <input class="form__phone-input" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
+              <input class="form__phone-input input-field" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
             </div>
             <div class="form__email">
               <label class="form__email-label label-field" for="form-email">Адрес почты</label>
-              <input class="form__email-input" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
+              <input class="form__email-input input-field" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
             </div>
           </div>
           <div class="form--background">
@@ -101,12 +101,12 @@
             </div>
           </div>
           <div class="container">
-            <p class="form__text label-field">Опишите свои эмоции</p>
+            <label class="form__text label-field" id="form-textarea">Опишите свои эмоции</label>
             <div class="form__textarea-button">
-              <textarea class="form__textarea" name="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="form__textarea input-field" for="form-textarea" name="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <button class="form__button" type="submit">Отправить форму</button>
             </div>
-            <p class="form__signature"><span class="form__signature--star">*</span> — обязательные поля</p>
+            <p class="form__text">*<span class="form__text--black">— обязательные поля</span></p>
           </div>
         </form>
       </section>
@@ -127,9 +127,9 @@
           <img class="page-footer__logo-image page-footer__logo-image--glasses" src="#" width="#" height="#">
         </a>
         <ul class="page-footer__social-list">
-          <li class="page-footer__social-item page-footer__social-item--twitter visually-hidden">Твиттер</li>
-          <li class="page-footer__social-item page-footer__social-item--facebook visually-hidden">Фэйсбук</li>
-          <li class="page-footer__social-item page-footer__social-item--youtube visually-hidden">Ютуб</li>
+          <li class="page-footer__social-item page-footer__social-item--twitter"><span class="visually-hidden">Твиттер</span></li>
+          <li class="page-footer__social-item page-footer__social-item--facebook"><span class="visually-hidden">Фэйсбук</span></li>
+          <li class="page-footer__social-item page-footer__social-item--youtube"><span class="visually-hidden">Ютуб</span></li>
         </ul>
         <a class="page-footer__developed page-footer__developed--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
