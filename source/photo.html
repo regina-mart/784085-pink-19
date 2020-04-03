@@ -8,12 +8,12 @@
     <header class="page-header">
       <nav class="main-navigation">
         <div class="container">
-          <div class="main-navigation__logo">
+          <div class="main-navigation__header">
             <a class="main-navigation__logo-link" href="index.html">
               <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
             </a>
+            <button class="main-navigation__toggle" type="button">Открыть меню</button>
           </div>
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
@@ -35,7 +35,7 @@
     </header>
     <main class="page-main">
       <section class="user-photos">
-        <div class="user-photos--background-1">
+        <div class="user-photos__background user-photos__background--1">
           <div class="container">
             <h1 class="user-photos__caption">Фотографии пользователей</h1>
           </div>
@@ -47,9 +47,9 @@
           <a class="user-photo__image-link" href="#">
             <img class="user-photo__image" src="#" width="#" height="#" alt="Горы">
           </a>
-          <p class="user-photo__panorama">Панорама дня</p>
+          <p class="user-photo__label-text">Панорама дня</p>
           <div class="container">
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Анна</p>
                 <p class="user-photo__time">(5 минут назад)</p>
@@ -64,7 +64,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Белый автомобиль">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Левон</p>
                 <p class="user-photo__time">(5 часов назад)</p>
@@ -79,7 +79,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Барабанная установка">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Антон</p>
                 <p class="user-photo__time">(12 часов назад)</p>
@@ -94,7 +94,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Небо сквозь стеклянный потолок">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Борис</p>
                 <p class="user-photo__time">(20 часов назад)</p>
@@ -109,7 +109,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Кубанская бахча">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Сергей</p>
                 <p class="user-photo__time">(25 часов назад)</p>
@@ -124,7 +124,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Ноги">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Максим</p>
                 <p class="user-photo__time">(40 часов назад)</p>
@@ -139,7 +139,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Крыло самолета">
             </a>
-            <div class="user-photo--background">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
               <div class="user-photo__user">
                 <p class="user-photo__name">Надежда</p>
                 <p class="user-photo__time">(45 часов назад)</p>
@@ -153,18 +153,32 @@
       <section class="publication-block">
         <div class="container">
           <p lass="publication-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="publication-block--background">
+          <div class="publication-block__background publication-block__background--1">
             <img class="publication-block__image" src="#" width="#" height="#" alt="Зима">
+            <div class="publication-block__tool-controls">
+              <input class="visually-hidden" type="radio" name="tool-1" id="tool-1" checked/>
+              <input class="visually-hidden" type="radio" name="tool-2" id="tool-2"/>
+              <input class="visually-hidden" type="radio" name="tool-3" id="tool-3"/>
+            </div>
             <div class="publication-block__tools">
-              <div class="publication-block__tools--crop publication-block__tools--active visually-hidden">Обрезка</div>
-              <div class="publication-block__tools--fill visually-hidden">Заливка</div>
-              <div class="publication-block__tools--brightness-contrast visually-hidden">Яркость-контраст</div>
-              <div class="publication-block__tools-scale scale scale__active">
-                <div class="scale__line visually-hidden">Шкала</div>
-                <div class="scale__range-circle visually-hidden">Ползунок</div>
+              <label class="publication-block__tool publication-block__tool--crop publication-block__tools--active" for="tool-1">
+                <span class="visually-hidden">Обрезка</span>
+              </label>
+              <label class="publication-block__tool publication-block__tool--fill" for="tool-2">
+                <span class="visually-hidden">Заливка</span>
+              </label>
+              <label class="publication-block__tool publication-block__tool--brightness-contrast" for="tool-3">
+                <span class="visually-hidden">Яркость-контраст</span>
+              </label>
+              <div class="publication-block__tools-scale scale scale--active">
+                <div class="scale__line"><span class="visually-hidden">Шкала-1</span></div>
+                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
+                <div class="scale__line"><span class="visually-hidden">Шкала-2</span></div>
+                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
+                <div class="scale__line"><span class="visually-hidden">Шкала-3</span></div>
+                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
               </div>
             </div>
-            <div class="publication-block--line visually-hidden">Разделяющая линия</div>
             <div class="publication-block__buttons">
               <button class="publication-block__button publication-button" type="submit" name="button">Запостить</button>
               <button class="publication-block__button publication-button publication-button--cancel" type="reset" name="button">Отмена</button>
@@ -179,9 +193,9 @@
           <img class="page-footer__logo-image page-footer__logo-image--glasses" src="#" width="#" height="#">
         </a>
         <ul class="page-footer__social-list">
-          <li class="page-footer__social-item page-footer__social-item--twitter visually-hidden">Твиттер</li>
-          <li class="page-footer__social-item page-footer__social-item--facebook visually-hidden">Фэйсбук</li>
-          <li class="page-footer__social-item page-footer__social-item--youtube visually-hidden">Ютуб</li>
+          <li class="page-footer__social-item page-footer__social-item--twitter"><span class="visually-hidden">Твиттер</span></li>
+          <li class="page-footer__social-item page-footer__social-item--facebook"><span class="visually-hidden">Фэйсбук</span></li>
+          <li class="page-footer__social-item page-footer__social-item--youtube"><span class="visually-hidden">Ютуб</span></li>
         </ul>
         <a class="page-footer__developed page-footer__developed--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
