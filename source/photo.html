@@ -35,7 +35,7 @@
     </header>
     <main class="page-main">
       <section class="user-photos">
-        <div class="user-photos__background user-photos__background--1">
+        <div class="user-photos__wrapper">
           <div class="container">
             <h1 class="user-photos__caption">Фотографии пользователей</h1>
           </div>
@@ -153,12 +153,12 @@
       <section class="publication-block">
         <div class="container">
           <p lass="publication-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="publication-block__background publication-block__background--1">
+          <div class="publication-block__background">
             <img class="publication-block__image" src="#" width="#" height="#" alt="Зима">
             <div class="publication-block__tool-controls">
-              <input class="visually-hidden" type="radio" name="tool-1" id="tool-1" checked/>
-              <input class="visually-hidden" type="radio" name="tool-2" id="tool-2"/>
-              <input class="visually-hidden" type="radio" name="tool-3" id="tool-3"/>
+              <input class="visually-hidden" type="radio" name="tool" value="tool-1" id="tool-1" checked/>
+              <input class="visually-hidden" type="radio" name="tool" value="tool-2" id="tool-2"/>
+              <input class="visually-hidden" type="radio" name="tool" value="tool-3" id="tool-3"/>
             </div>
             <div class="publication-block__tools">
               <label class="publication-block__tool publication-block__tool--crop publication-block__tools--active" for="tool-1">
