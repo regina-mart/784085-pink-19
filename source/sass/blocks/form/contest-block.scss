@@ -1,0 +1,23 @@
+.contest-block__content-wrapper {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: #283645;
+  background-repeat: no-repeat;
+  content: "";
+  // width: 19px;
+  // height: 19px;
+  display: block;
+  text-align: center;
+}
+
+.contest-block__caption {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.contest-block__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
