@@ -1,0 +1,27 @@
+.contacts-block {
+  text-align: center;
+}
+
+.contacts-block__text-caption {
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+}
+
+.contacts-block__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.contacts-block__text-bold {
+  font-size: 18px;
+  color: #283645;
+}
+
+.contacts-block__text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+  margin: 0;
+}

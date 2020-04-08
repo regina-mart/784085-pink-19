@@ -3,34 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="container">
           <div class="main-navigation__header">
-            <a class="main-navigation__logo-link" href="index.html">
-              <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
-            </a>
-            <button class="main-navigation__toggle" type="button">Открыть меню</button>
+            <div class="container">
+              <a class="main-navigation__logo-link">
+                <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
+              </a>
+              <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          </div>
           </div>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
-                <a href="">Главная</a>
+                <a class="site-list__link" href="">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Фотографии</a>
+                <a class="site-list__link" href="#">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Конкурс</a>
+                <a class="site-list__link" href="#">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#">HTML Academy</a>
+                <a class="site-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
           </div>
-        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -49,7 +51,7 @@
           </a>
           <p class="user-photo__label-text">Панорама дня</p>
           <div class="container">
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Анна</p>
                 <p class="user-photo__time">(5 минут назад)</p>
@@ -64,7 +66,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Белый автомобиль">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Левон</p>
                 <p class="user-photo__time">(5 часов назад)</p>
@@ -79,7 +81,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Барабанная установка">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Антон</p>
                 <p class="user-photo__time">(12 часов назад)</p>
@@ -94,7 +96,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Небо сквозь стеклянный потолок">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Борис</p>
                 <p class="user-photo__time">(20 часов назад)</p>
@@ -109,7 +111,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Кубанская бахча">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Сергей</p>
                 <p class="user-photo__time">(25 часов назад)</p>
@@ -124,7 +126,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Ноги">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Максим</p>
                 <p class="user-photo__time">(40 часов назад)</p>
@@ -139,7 +141,7 @@
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Крыло самолета">
             </a>
-            <div class="user-photo__content-wrapper user-photo__content-wrapper--1">
+            <div class="user-photo__content-wrapper">
               <div class="user-photo__user">
                 <p class="user-photo__name">Надежда</p>
                 <p class="user-photo__time">(45 часов назад)</p>
@@ -152,8 +154,8 @@
       </section>
       <section class="publication-block">
         <div class="container">
-          <p lass="publication-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="publication-block__post publication-block__post--background">
+          <p class="publication-block__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="publication-block__post">
             <img class="publication-block__image" src="#" width="#" height="#" alt="Зима">
             <div class="publication-block__tool-controls">
               <input class="visually-hidden" type="radio" name="tool" value="tool-1" id="tool-1" checked/>

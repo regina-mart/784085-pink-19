@@ -3,34 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="container">
           <div class="main-navigation__header">
-            <a class="main-navigation__logo-link">
-              <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
-            </a>
-            <button class="main-navigation__toggle" type="button">Открыть меню</button>
+            <div class="container">
+              <a class="main-navigation__logo-link">
+                <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
+              </a>
+              <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          </div>
           </div>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
-                <a href="">Главная</a>
+                <a class="site-list__link" href="">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Фотографии</a>
+                <a class="site-list__link" href="/photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Конкурс</a>
+                <a class="site-list__link" href="/form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#">HTML Academy</a>
+                <a class="site-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
           </div>
-        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -47,13 +49,13 @@
               <a class="download__button" href="#">Скачать приложение</a>
               <ul class="download__list">
                 <li class="download__item download__item--ios">
-                  <a href="#">iOS</a>
+                  <a href="#"><span class="visually-hidden">iOS</span></a>
                 </li>
                 <li class="download__item download__item--android">
-                  <a href="#">Android</a>
+                  <a href="#"><span class="visually-hidden">Android</span></a>
                 </li>
                 <li class="download__item download__item--windows">
-                  <a href="#">Windows</a>
+                  <a href="#"><span class="visually-hidden">Windows</span></a>
                 </li>
               </ul>
               <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -62,8 +64,8 @@
       </section>
       <section class="advantages-block">
           <div class="container">
-            <p class="advantages-block__text">Устали от серости мегаполиса?</p>
-            <p class="advantages-block__text">Нам есть, что вам предложить!</p>
+            <p class="advantages-block__text-promo">Устали от серости мегаполиса?</p>
+            <p class="advantages-block__text-promo">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages-block__list advantages-block__list--background">
           <div class="container">
@@ -110,29 +112,29 @@
         <div class="buy-block__slider slider">
           <table class="buy-block__list slider__list">
             <tr>
-              <td class="buy-block__item buy-block__item--text">База</td>
-              <td class="buy-block__item buy-block__item--text buy-block__item--tariff">Стандарт</td>
-              <td class="buy-block__item buy-block__item--text">Анлим</td>
+              <td class="buy-block__item buy-block__item--text buy-block__item--background">База</td>
+              <td class="buy-block__item buy-block__item--text buy-block__item--background buy-block__item--tariff">Стандарт</td>
+              <td class="buy-block__item buy-block__item--text buy-block__item--background">Анлим</td>
             </tr>
             <tr>
-              <td class="buy-block__item buy-block__item--price">1,99 USD</td>
-              <td class="buy-block__item buy-block__item--price">3,99 USD</td>
-              <td class="buy-block__item buy-block__item--price">9,99 USD</td>
+              <td class="buy-block__item buy-block__item--background buy-block__item--price">1,99 USD</td>
+              <td class="buy-block__item buy-block__item--background buy-block__item--price">3,99 USD</td>
+              <td class="buy-block__item buy-block__item--background buy-block__item--price">9,99 USD</td>
             </tr>
             <tr>
-              <td class="buy-block__item buy-block__item--yes">Розовый фильтр</td>
-              <td class="buy-block__item buy-block__item--yes">Розовый фильтр</td>
-              <td class="buy-block__item buy-block__item--yes">Розовый фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
             </tr>
             <tr>
-              <td class="buy-block__item buy-block__item--no">Смайлики</td>
-              <td class="buy-block__item buy-block__item--yes">Смайлики</td>
-              <td class="buy-block__item buy-block__item--yes">Смайлики</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--no">Смайлики</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Смайлики</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Смайлики</td>
             </tr>
             <tr>
-              <td class="buy-block__item buy-block__item--no">Комментарии</td>
-              <td class="buy-block__item buy-block__item--no">Комментарии</td>
-              <td class="buy-block__item buy-block__item--yes">Комментарии</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--no">Комментарии</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--no">Комментарии</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Комментарии</td>
             </tr>
           </table>
         </div>
@@ -144,23 +146,23 @@
       </section>
       <section class="contacts-block">
           <div class="container">
-            <p class="contacts-block__text">Остались вопросы? Свяжитесь с нами!</p>
+            <p class="contacts-block__text-caption">Остались вопросы? Свяжитесь с нами!</p>
             <div class="contacts-block__item">
               <b class="contacts-block__text-bold">Звоните:</b>
-              <a class="contacts-block__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts-block__phone contacts-block__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts-block__item">
               <b class="contacts-block__text-bold">Пишите:</b>
-              <a class="contacts-block__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts-block__mail contacts-block__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts-block__item">
               <b class="contacts-block__text-bold">Приезжайте в гости:</b>
-              <p class="contacts-block__address">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts-block__address contacts-block__text">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="footer-index">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871589724!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585751098943!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </footer>
   </body>
