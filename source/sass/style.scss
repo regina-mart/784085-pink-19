@@ -2,15 +2,13 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 320px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
-
-// арапрапра
 
 a {
   text-decoration: none;
@@ -21,7 +19,6 @@ a {
   height: 1px;
   width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
 
@@ -38,9 +35,7 @@ a {
 @import "blocks/index/reviews-block.scss";
 @import "blocks/index/buy-block.scss";
 @import "blocks/index/contacts-block.scss";
-
 @import "blocks/photo/user-photos.scss";
 @import "blocks/photo/publication-block.scss";
-
 @import "blocks/form/contest-block.scss";
 @import "blocks/form/form.scss";
