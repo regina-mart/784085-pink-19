@@ -11,3 +11,10 @@
   opacity: 0.3;
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .main-navigation__header {
+    min-height: 60px;
+    background-color: red;
+  }
+}
