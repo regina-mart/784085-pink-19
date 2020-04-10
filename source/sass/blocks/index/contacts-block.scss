@@ -5,7 +5,7 @@
 .contacts-block__text-caption {
   font-size: 24px;
   font-weight: 300;
-  color: #283645;
+  color: $color-dark;
 }
 
 .contacts-block__item {
@@ -16,12 +16,12 @@
 
 .contacts-block__text-bold {
   font-size: 18px;
-  color: #283645;
+  color: $color-dark;
 }
 
 .contacts-block__text {
   font-size: 24px;
   font-weight: 300;
-  color: #d22856;
+  color: $color-pink;
   margin: 0;
 }

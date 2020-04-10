@@ -1,6 +1,6 @@
 .user-photos__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: #283645;
+  background-color: $color-dark;
   background-repeat: no-repeat;
   content: "";
   // width: 19px;
@@ -18,7 +18,7 @@
 .user-photos__promo-text {
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #d22856;
+  background-color: $color-pink;
   padding-left: 20px;
   padding-right: 21px;
   padding-top: 13px;
@@ -37,7 +37,7 @@
 }
 
 .user-photo__content-wrapper {
-  background-color: #f2f2f2;
+  background-color: $color-grey;
   padding-left: 17px;
   padding-right: 13px;
   padding-top: 25px;
@@ -50,7 +50,7 @@
 .user-photo__name,
 .user-photo__time,
 .user-photo__text {
-  color: #283645;
+  color: $color-dark;
 }
 
 .user-photo__name {
@@ -65,5 +65,5 @@
 .user-photo__like {
   font-size: 12px;
   text-transform: uppercase;
-  color: #d22856;
+  color: $color-pink;
 }
