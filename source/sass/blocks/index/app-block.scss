@@ -1,4 +1,4 @@
-.app-block__wrapper {
+.app-block {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: $color-dark;
   background-repeat: no-repeat;
@@ -14,3 +14,17 @@
   font-weight: 300;
   color: #ffffff;
 }
+
+.app-block__wrapper {
+  @media (min-width: $tablet-width) {
+      background-color: green;
+      width: 300px;
+    }
+}
+
+// @media (min-width: $tablet-width) {
+//   .app-block__wrapper {
+//     background-color: green;
+//     width: 300px;
+//   }
+// }
