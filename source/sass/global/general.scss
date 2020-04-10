@@ -29,9 +29,23 @@ img {
 .body-wrapper {
   width: 320px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    }
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    }
 }
 
 .container {
   width: 280px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    }
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    }
 }
