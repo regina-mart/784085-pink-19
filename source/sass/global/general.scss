@@ -29,23 +29,23 @@ img {
 .body-wrapper {
   width: 320px;
   margin: 0 auto;
-  // @media (min-width: $tablet-width) {
-  //   margin: 0 auto;
-  //   }
-  // @media (min-width: $desktop-width) {
-  //   margin: 0 auto;
-  //   }
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    }
 }
 
 .container {
   width: 280px;
   margin: 0 auto;
-  // @media (min-width: $tablet-width) {
-  //   width: 620px;
-  //   margin: 0 auto;
-  //   }
-  // @media (min-width: $desktop-width) {
-  //   width: 940px;
-  //   margin: 0 auto;
-  //   }
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    background-color: yellow;
+    }
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    background-color: red;
+    }
 }
