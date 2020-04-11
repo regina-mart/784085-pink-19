@@ -9,22 +9,21 @@
   text-align: center;
 }
 
+.app-block__wrapper {
+  @media (min-width: $tablet-width) {
+      width: 300px;
+      margin-right: auto;
+    }
+}
+
 .app-block__text {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
-}
-
-.app-block__wrapper {
+  width: 225px;
+  display: inline-block;
   @media (min-width: $tablet-width) {
-      background-color: green;
-      width: 300px;
+    font-size: 40px;
+    line-height: 40px;
     }
 }
-
-// @media (min-width: $tablet-width) {
-//   .app-block__wrapper {
-//     background-color: green;
-//     width: 300px;
-//   }
-// }
