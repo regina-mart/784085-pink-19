@@ -33,7 +33,7 @@ img {
     width: 660px;
     }
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    // width: 1200px;
     }
 }
 
@@ -42,10 +42,10 @@ img {
   margin: 0 auto;
   @media (min-width: $tablet-width) {
     width: 620px;
-    background-color: yellow;
+    // background-color: yellow;
     }
   @media (min-width: $desktop-width) {
-    width: 940px;
-    background-color: red;
+    // width: 940px;
+    // background-color: red;
     }
 }
