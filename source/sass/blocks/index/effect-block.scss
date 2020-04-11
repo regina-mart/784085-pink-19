@@ -1,0 +1,20 @@
+.effect-blok {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.effect-blok__text-promo {
+  width: 310px;
+  margin-right: 0;
+}
+
+.effect-blok__text-bold {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.effect-blok__link {
+  color: $color-pink;
+}
