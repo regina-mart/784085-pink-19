@@ -1,14 +1,34 @@
+.reviews-block {
+  display: flex;
+}
+
 .reviews-block__slider-item {
   text-align: center;
 }
 
+.reviews-block__user {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
 .reviews-block__name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
+.reviews-block__about-user {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    line-height: 30px;
+  }
+}
+
 .reviews-block__text {
   font-size: 14px;
   line-height: 30px;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
