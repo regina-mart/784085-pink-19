@@ -1,13 +1,14 @@
-.label-field {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $color-pink;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-flex {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+  }
 }
 
 .input-field {
@@ -17,6 +18,30 @@
   padding-right: 79px;
   padding-top: 22px;
   padding-bottom: 18px;
+  @media (min-width: $tablet-width) {
+    // width: 100%;
+  }
+}
+
+.form__text--width-1 {
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    padding-right: 22px;
+  }
+}
+
+.form__text--width-2 {
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    padding-right: 22px;
+  }
+}
+
+.form__text--width-3 {
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    padding-right: 22px;
+  }
 }
 
 .input-field::placeholder {
@@ -28,6 +53,9 @@
 .form__achievements,
 .form__app {
   background-color: $color-grey;
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .form__text {
@@ -36,6 +64,12 @@
   color: $color-pink;
   text-transform: uppercase;
   text-align: center;
+}
+
+.caption-division {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+  }
 }
 
 .form__achievements-list,
@@ -50,6 +84,48 @@
   color: $color-dark;
 }
 
+.form__fieldset-app,
+.form__fieldset-achievements,
+.form__fieldset-contacts,
+.form__fieldset-emotions {
+  border: none;
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    // order: 2;
+  }
+}
+
+.legend {
+  font-size: 0;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $color-pink;
+  }
+}
+
+.form__phone,
+.form__email {
+ flex-direction: column-reverse;
+}
+.form__textarea {
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 496px;
+  }
+}
+
+.button-required-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .form__button {
   font-size: 18px;
   line-height: 30px;
