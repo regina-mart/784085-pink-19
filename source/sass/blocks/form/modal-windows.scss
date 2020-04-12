@@ -1,0 +1,22 @@
+.modal-error,
+.modal-application-sent {
+  background-color: #ffffff;
+}
+
+.text-bold {
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+}
+
+.modal-button__background {
+  background-color: $color-grey;
+}
