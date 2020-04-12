@@ -50,6 +50,20 @@
   text-align: left;
 }
 
+.user-photos__content-wrapper-2 {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.container-user-photos {
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
 .user-photo__user {
   display: flex;
 }
@@ -67,6 +81,10 @@
 
 .user-photo__time {
   font-weight: 300;
+}
+
+.user-photo__text {
+  order: 2;
 }
 
 .user-photo__like {
