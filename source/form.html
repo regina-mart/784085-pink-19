@@ -47,21 +47,23 @@
           <p class="contest-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form class="contest-block__form form" action="https://echo.htmlacademy.ru" method="get">
               <div class="form__surname form-flex">
-                <label class="form__surname-label label-field" for="form-surname">Фамилия:</label>
+                <label class="form__surname-label form__text form__text--width-1" for="form-surname">Фамилия:</label>
                 <input class="form__surname-input input-field" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
               </div>
               <div class="form__name form-flex">
-                <label class="form__name-label label-field" for="form-name">Имя:</label>
+                <label class="form__name-label form__text form__text--width-2" for="form-name">Имя:</label>
                 <input class="form__name-input input-field" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="form__patronymic form-flex">
-                <label class="form__patronymic-label label-field" for="form-patronymic">Отчество:</label>
+                <label class="form__patronymic-label form__text form__text--width-3" for="form-patronymic">Отчество:</label>
                 <input class="form__patronymic-input input-field" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
               </div>
             </div>
-            <div class="form__achievements">
+            <fieldset class="form__fieldset-achievements">
+              <legend class="legend">Ваши безбашенные достижения в путешествии</legend>
+             <div class="form__achievements">
               <div class="container">
-                <p class="form__text">Ваши безбашенные достижения в путешествии</p>
+                <p class="form__text caption-division">Ваши безбашенные достижения в путешествии</p>
                 <div class="form__achievements-list">
                   <input class="form__achievements-input visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
                     <label class="form__achievements-label label-text" for="selfie">Сделал селфи с акулой</label>
@@ -78,19 +80,25 @@
                 </div>
               </div>
             </div>
-            <div class="container">
+            </fieldset>
+            <fieldset class="form__fieldset-contacts">
+              <legend class="legend">Контактная информация</legend>
+             <div class="container">
               <div class="form__phone form-flex">
-                <label class="form__phone-label label-field" for="form-phone">Номер телефона</label>
+                <label class="form__phone-label form__text" for="form-phone">Номер телефона</label>
                 <input class="form__phone-input input-field" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
               </div>
               <div class="form__email form-flex">
-                <label class="form__email-label label-field" for="form-email">Адрес почты</label>
+                <label class="form__email-label form__text" for="form-email">Адрес почты</label>
                 <input class="form__email-input input-field" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
               </div>
             </div>
+            </fieldset>
+          <fieldset class="form__fieldset-app">
+            <legend class="legend">С каким приложением путешествовали?</legend>
             <div class="form__app">
               <div class="container">
-                <p class="form__text">С каким приложением путешествовали?</p>
+                <p class="form__text caption-division">С каким приложением путешествовали?</p>
                 <div class="form__app-list">
                 <input class="form__app-input visually-hidden" type="radio" name="system" value="ios" id="ios" value="ios" checked>
                   <label class="form__app-label label-text" for="ios">Pink для iOS</label>
@@ -101,14 +109,18 @@
                 </div>
               </div>
             </div>
-            <div class="container">
-              <label class="form__text label-field" id="form-textarea">Опишите свои эмоции</label>
-              <div class="form__textarea-button">
+          </fieldset>
+          <fieldset class="form__fieldset-emotions">
+            <legend class="legend">Опишите свои эмоции</legend>
+              <label class="form__text caption-division" id="form-textarea">Опишите свои эмоции</label>
                 <textarea class="form__textarea input-field" for="form-textarea" name="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <div class="button-required-wrapper">
                 <button class="form__button" type="submit">Отправить форму</button>
-              </div>
               <p class="form__required">*<span class="form__required--text">— обязательные поля</span></p>
             </div>
+            </div>
+          </div>
           </form>
         </div>
       </section>
