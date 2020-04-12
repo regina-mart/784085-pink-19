@@ -3,10 +3,14 @@
   line-height: 30px;
   color: $color-dark;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .publication-block__post {
   background-color: $color-grey;
+  display: flex;
 }
 
 .publication-block__buttons {
