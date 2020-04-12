@@ -3,16 +3,22 @@
   background-color: $color-dark;
   background-repeat: no-repeat;
   content: "";
-  // width: 19px;
-  // height: 19px;
+  min-height: 100px;
   display: block;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
 }
 
 .contest-block__caption {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .contest-block__text {
@@ -20,4 +26,8 @@
   line-height: 30px;
   color: $color-dark;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
