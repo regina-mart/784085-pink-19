@@ -11,10 +11,14 @@
     order: 2;
   }
 }
+
 .reviews-block__name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    }
 }
 
 .reviews-block__about-user {
@@ -23,6 +27,9 @@
     display: block;
     line-height: 30px;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    }
 }
 
 .reviews-block__text {
@@ -31,4 +38,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    }
 }

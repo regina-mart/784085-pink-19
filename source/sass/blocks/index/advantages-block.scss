@@ -8,8 +8,14 @@
   text-align: center;
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    line-height: 40px;
     width: 587px;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+    width: 770px;
+    }
 }
 
 .advantages-block__text-promo-2 {
@@ -18,8 +24,14 @@
   text-align: center;
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    line-height: 40px;
     width: 347px;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+    width: 450px;
+    }
 }
 
 .container-advantages-block {
@@ -29,6 +41,10 @@
     width: 310px;
     margin-right: 0;
   }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    }
 }
 
 .advantages-block__item {
@@ -41,8 +57,29 @@
 .advantages-block__text-bold {
   font-size: 18px;
   line-height: 24px;
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    }
 }
 
 .advantages-block__text {
   font-weight: 300;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    }
+}
+
+.advantages-block__image-secondary {
+  display: none;;
+  @media (min-width: $desktop-width) {
+    display: block;
+    }
+}
+
+.advantages-block__image-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    }
 }

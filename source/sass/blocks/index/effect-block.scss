@@ -1,20 +1,33 @@
-.effect-blok {
+.effect-block {
   display: none;
   @media (min-width: $tablet-width) {
     display: block;
+    display: flex;
   }
 }
 
-.effect-blok__text-promo {
+.effect-block__text-promo {
   width: 310px;
   margin-right: 0;
 }
 
-.effect-blok__text-bold {
+.effect-block__text-bold {
   font-size: 30px;
   line-height: 36px;
+
 }
 
-.effect-blok__link {
+.effect-block__text {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    }
+}
+
+.effect-block__link {
   color: $color-pink;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    }
 }
