@@ -78,6 +78,20 @@
   flex-direction: column;
 }
 
+.form__achievements-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+
+.form__achievements-label {
+  @media (min-width: $desktop-width) {
+    width: 236px;
+    }
+}
+
 .label-text {
   font-size: 18px;
   line-height: 30px;
@@ -107,15 +121,33 @@
   }
 }
 
+.form__contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    }
+}
+
 .form__phone,
 .form__email {
- flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
+
+.form__phone-input {
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+    }
+}
+
 .form__textarea {
   width: 280px;
+  display: block;
+  margin: auto;
   @media (min-width: $tablet-width) {
     width: 496px;
   }
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    }
 }
 
 .button-required-wrapper {
