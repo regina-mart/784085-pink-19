@@ -84,14 +84,16 @@
             <fieldset class="form__fieldset-contacts">
               <legend class="legend">Контактная информация</legend>
              <div class="container">
-              <div class="form__phone form-flex">
+               <div class="form__contacts">
+                 <div class="form__phone form-flex">
                 <label class="form__phone-label form__text" for="form-phone">Номер телефона</label>
                 <input class="form__phone-input input-field" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
               </div>
-              <div class="form__email form-flex">
+                 <div class="form__email form-flex">
                 <label class="form__email-label form__text" for="form-email">Адрес почты</label>
                 <input class="form__email-input input-field" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
               </div>
+               </div>
             </div>
             </fieldset>
           <fieldset class="form__fieldset-app">
@@ -128,7 +130,9 @@
         <div class="modal-error">
           <b class="modal-error__text-bold text-bold">Что-то пошло не так!</b>
           <p class="modal-error__text modal-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal-error__button modal-button" type="button" name="button">Ок</button>
+          <div class="modal-button__background--desktop">
+            <button class="modal-error__button modal-button" type="button" name="button">Ок</button>
+          </div>
         </div>
         <div class="modal-application-sent">
           <b class="modal-application-sent__text-bold text-bold">Ваша заявка отправлена</b>
