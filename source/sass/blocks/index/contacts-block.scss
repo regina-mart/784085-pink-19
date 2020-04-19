@@ -6,6 +6,7 @@
   font-size: 24px;
   font-weight: 300;
   color: $color-dark;
+  margin: 0 auto;
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 40px;
@@ -22,7 +23,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: space-around;
   }
 }
 

@@ -4,6 +4,10 @@
 
 .reviews-block__slider-item {
   text-align: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews-block__user {

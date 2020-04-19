@@ -7,3 +7,10 @@
     width: 1200px;
     }
 }
+
+.page-footer-index {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

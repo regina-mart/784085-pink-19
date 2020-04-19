@@ -2,8 +2,11 @@
   display: none;
   @media (min-width: $tablet-width) {
     display: block;
-    display: flex;
   }
+}
+
+.effect-block--flex {
+  display: flex;
 }
 
 .effect-block__text-promo {

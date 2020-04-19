@@ -49,6 +49,8 @@
   background-color: $color-grey;
   padding-left: 17px;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-photos__content-wrapper-2 {
@@ -66,7 +68,9 @@
   }
 }
 .user-photo__user {
-  display: flex;
+  // display: flex;
+  order: 1;
+  width: 400px;
 }
 
 .user-photo__name,
@@ -85,11 +89,14 @@
 }
 
 .user-photo__text {
-  order: 2;
+  flex: 0 1 100%;
+  order: 3;
 }
 
 .user-photo__like {
   font-size: 12px;
   text-transform: uppercase;
   color: $color-pink;
+  order: 2;
+  width: 400px;
 }
