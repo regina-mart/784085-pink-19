@@ -1,13 +1,18 @@
-.form {
+.form__wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.form__user-data {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .form-flex {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    order: 1;
   }
 }
 
@@ -55,6 +60,7 @@
   background-color: $color-grey;
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    // order: 2;
   }
 }
 
@@ -139,7 +145,6 @@
 }
 
 .form__textarea {
-  width: 280px;
   display: block;
   margin: auto;
   @media (min-width: $tablet-width) {
