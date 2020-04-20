@@ -1,5 +1,6 @@
 .effect-block {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -17,20 +18,20 @@
 .effect-block__text-bold {
   font-size: 30px;
   line-height: 36px;
-
 }
 
 .effect-block__text {
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    }
+  }
 }
 
 .effect-block__link {
   color: $color-pink;
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    }
+  }
 }

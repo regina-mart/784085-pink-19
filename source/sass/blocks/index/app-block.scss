@@ -10,9 +10,9 @@
 
 .app-block__wrapper {
   @media (min-width: $tablet-width) {
-      width: 300px;
-      margin-right: auto;
-    }
+    width: 300px;
+    margin-right: auto;
+  }
 }
 
 .app-block__text {
@@ -21,12 +21,14 @@
   color: #ffffff;
   width: 225px;
   display: inline-block;
+
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 40px;
-    }
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 50px;
-    }
+  }
 }

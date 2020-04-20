@@ -1,15 +1,18 @@
 .footer-index__map {
   width: 320px;
+
   @media (min-width: $tablet-width) {
     width: 660px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1200px;
-    }
+  }
 }
 
 .page-footer-index {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }

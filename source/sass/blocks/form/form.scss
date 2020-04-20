@@ -1,6 +1,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,9 +12,10 @@
   @media (min-width: $tablet-width) {
     order: 1;
   }
+
   @media (min-width: $desktop-width) {
     width: 431px;
-    }
+  }
 }
 
 .form-flex {
@@ -30,6 +32,7 @@
   padding-right: 79px;
   padding-top: 22px;
   padding-bottom: 18px;
+
   @media (min-width: $tablet-width) {
     // width: 100%;
   }
@@ -62,15 +65,16 @@
   color: $color-dark;
 }
 
-.form__app{
+.form__app {
   @media (min-width: $desktop-width) {
     width: 431px;
-    }
+  }
 }
 
 .form__achievements,
 .form__app {
   background-color: $color-grey;
+
   @media (min-width: $tablet-width) {
     background-color: transparent;
   }
@@ -101,13 +105,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    }
+  }
 }
 
 .form__achievements-label {
   @media (min-width: $desktop-width) {
     width: 236px;
-    }
+  }
 }
 
 .label-text {
@@ -121,6 +125,7 @@
 .form__fieldset-contacts,
 .form__fieldset-emotions {
   border: none;
+
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 3px;
@@ -129,6 +134,7 @@
 
 .legend {
   font-size: 0;
+
   @media (min-width: $tablet-width) {
     text-align: center;
     font-size: 14px;
@@ -141,7 +147,7 @@
 .form__contacts {
   @media (min-width: $desktop-width) {
     display: flex;
-    }
+  }
 }
 
 .form__phone,
@@ -152,26 +158,33 @@
 .form__phone-input {
   @media (min-width: $desktop-width) {
     margin-right: 50px;
-    }
+  }
 }
 
 .form__textarea {
   display: block;
   margin: auto;
+
   @media (min-width: $tablet-width) {
     width: 496px;
   }
+
   @media (min-width: $desktop-width) {
     width: 816px;
-    }
+  }
 }
 
 .button-required-wrapper {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 6;
   }
 }
 
@@ -206,9 +219,10 @@
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
   @media (min-width: $desktop-width) {
     width: 431px;
-    }
+  }
 }
 
 .form__fieldset-contacts {
@@ -226,11 +240,5 @@
 .form__fieldset-emotions {
   @media (min-width: $tablet-width) {
     order: 5;
-  }
-}
-
-.button-required-wrapper {
-  @media (min-width: $tablet-width) {
-    order: 6;
   }
 }

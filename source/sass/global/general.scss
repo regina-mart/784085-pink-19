@@ -30,23 +30,27 @@ img {
   width: 320px;
   margin: 0 auto;
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 660px;
-    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 1200px;
-    }
+  }
 }
 
 .container {
   width: 280px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 620px;
-    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 940px;
-    }
+  }
 }
 
 .page-main {

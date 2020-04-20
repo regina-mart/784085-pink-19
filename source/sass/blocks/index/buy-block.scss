@@ -16,10 +16,10 @@
 
 .buy-block__item--secondary {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: table-cell;
-
-    }
+  }
 }
 
 .buy-block__item--border-none {

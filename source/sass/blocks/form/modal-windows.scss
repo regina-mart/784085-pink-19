@@ -3,30 +3,34 @@
   background-color: #ffffff;
   width: 320px;
   margin: auto;
+
   @media (min-width: $tablet-width) {
     width: 460px;
-    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 780px;
-    }
+  }
 }
 
 .text-bold {
   font-size: 18px;
   text-align: center;
   display: block;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
-    }
+  }
 }
 
 .modal-text {
   text-align: center;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    }
+  }
 }
 
 .modal-button {
@@ -47,5 +51,5 @@
 .modal-button__background--desktop {
   @media (min-width: $desktop-width) {
     background-color: $color-grey;
-    }
+  }
 }

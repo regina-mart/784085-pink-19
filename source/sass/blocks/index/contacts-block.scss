@@ -7,23 +7,25 @@
   font-weight: 300;
   color: $color-dark;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 40px;
     width: 375px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 50px;
     width: 490px;
-    }
+  }
 }
 
 .contacts-block__list {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 
@@ -31,6 +33,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 28px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
