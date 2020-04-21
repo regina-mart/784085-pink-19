@@ -1,14 +1,54 @@
+.reviews-block {
+  display: flex;
+}
+
 .reviews-block__slider-item {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.reviews-block__user {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .reviews-block__name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews-block__about-user {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews-block__text {
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

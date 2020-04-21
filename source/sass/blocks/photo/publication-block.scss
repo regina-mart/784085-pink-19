@@ -1,12 +1,20 @@
 .publication-block__text {
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .publication-block__post {
-  background-color: #f2f2f2;
+  background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .publication-block__buttons {
@@ -18,9 +26,9 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #d22856;
+  color: $color-pink;
   text-align: center;
-  border: 3px solid #d22856;
+  border: 3px solid $color-pink;
   border-radius: 35px;
 }
 

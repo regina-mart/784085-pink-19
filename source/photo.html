@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="body-wrapper">
     <header class="page-header">
       <nav class="main-navigation">
           <div class="main-navigation__header">
@@ -20,16 +22,16 @@
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="">Главная</a>
+                <a class="site-list__link" href="/index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Конкурс</a>
+                <a class="site-list__link" href="/form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -51,18 +53,20 @@
           </a>
           <p class="user-photo__label-text">Панорама дня</p>
           <div class="container">
-            <div class="user-photo__content-wrapper">
-              <div class="user-photo__user">
+            <div class="user-photo__content-wrapper user-photo__content-wrapper--chief">
+              <div class="user-photo__user user-photo__user--chief">
                 <p class="user-photo__name">Анна</p>
                 <p class="user-photo__time">(5 минут назад)</p>
               </div>
-              <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="user-photo__like user-photo__like--heart">Нравится: 215</p>
+              <p class="user-photo__text user-photo__text--chief">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="user-photo__like user-photo__like--heart user-photo__like--chief">Нравится: 215</p>
             </div>
           </div>
         </article>
+        <div class="container">
+          <div class="user-photos__content-wrapper-2">
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Белый автомобиль">
             </a>
@@ -77,7 +81,7 @@
           </div>
         </article>
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Барабанная установка">
             </a>
@@ -92,7 +96,7 @@
           </div>
         </article>
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Небо сквозь стеклянный потолок">
             </a>
@@ -107,7 +111,7 @@
           </div>
         </article>
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Кубанская бахча">
             </a>
@@ -122,7 +126,7 @@
           </div>
         </article>
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Ноги">
             </a>
@@ -137,7 +141,7 @@
           </div>
         </article>
         <article class="user-photos__item user-photo">
-          <div class="container">
+          <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <img class="user-photo__image" src="#" width="#" height="#" alt="Крыло самолета">
             </a>
@@ -151,6 +155,8 @@
             </div>
           </div>
         </article>
+      </div>
+        </div>
       </section>
       <section class="publication-block">
         <div class="container">
@@ -202,5 +208,6 @@
         <a class="page-footer__developed page-footer__developed--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
     </footer>
+  </div>
   </body>
 </html>

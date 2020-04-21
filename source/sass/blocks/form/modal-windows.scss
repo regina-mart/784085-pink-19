@@ -1,0 +1,55 @@
+.modal-error,
+.modal-application-sent {
+  background-color: #ffffff;
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.text-bold {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.modal-button {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+}
+
+.modal-button__background {
+  background-color: $color-grey;
+}
+
+.modal-button__background--desktop {
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey;
+  }
+}

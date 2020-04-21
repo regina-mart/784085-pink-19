@@ -1,23 +1,37 @@
 .contest-block__content-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: #283645;
+  background-color: $color-dark;
   background-repeat: no-repeat;
   content: "";
-  // width: 19px;
-  // height: 19px;
+  min-height: 100px;
   display: block;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
 }
 
 .contest-block__caption {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
-.contest-block__text {
+.contest-block__promo-text {
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

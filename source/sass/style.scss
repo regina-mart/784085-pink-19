@@ -1,41 +1,17 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-.container {
-  width: 280px;
-  margin: 0 auto;
-}
-
+@import "global/variables.scss";
+@import "global/general.scss";
 @import "blocks/index/main-navigation.scss";
 @import "blocks/index/site-list.scss";
 @import "blocks/index/app-block.scss";
 @import "blocks/index/download.scss";
 @import "blocks/index/advantages-block.scss";
+@import "blocks/index/effect-block.scss";
 @import "blocks/index/reviews-block.scss";
 @import "blocks/index/buy-block.scss";
 @import "blocks/index/contacts-block.scss";
+@import "blocks/index/footer-index.scss";
 @import "blocks/photo/user-photos.scss";
 @import "blocks/photo/publication-block.scss";
 @import "blocks/form/contest-block.scss";
 @import "blocks/form/form.scss";
+@import "blocks/form/modal-windows.scss";

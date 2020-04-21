@@ -1,13 +1,28 @@
-.label-field {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #d22856;
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__user-data {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
 }
 
 .form-flex {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .input-field {
@@ -17,25 +32,66 @@
   padding-right: 79px;
   padding-top: 22px;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    // width: 100%;
+  }
+}
+
+.form__text--width-1 {
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    padding-right: 22px;
+  }
+}
+
+.form__text--width-2 {
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    padding-right: 22px;
+  }
+}
+
+.form__text--width-3 {
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    padding-right: 22px;
+  }
 }
 
 .input-field::placeholder {
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
+}
+
+.form__app {
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
 }
 
 .form__achievements,
 .form__app {
-  background-color: #f2f2f2;
+  background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .form__text {
   font-size: 14px;
   line-height: 18px;
-  color: #d22856;
+  color: $color-pink;
   text-transform: uppercase;
   text-align: center;
+}
+
+.caption-division {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+  }
 }
 
 .form__achievements-list,
@@ -44,10 +100,92 @@
   flex-direction: column;
 }
 
+.form__achievements-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__achievements-label {
+  @media (min-width: $desktop-width) {
+    width: 236px;
+  }
+}
+
 .label-text {
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
+}
+
+.form__fieldset-app,
+.form__fieldset-achievements,
+.form__fieldset-contacts,
+.form__fieldset-emotions {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}
+
+.legend {
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $color-pink;
+  }
+}
+
+.form__contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__phone,
+.form__email {
+  flex-direction: column-reverse;
+}
+
+.form__phone-input {
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
+}
+
+.form__textarea {
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+  }
+}
+
+.button-required-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
 }
 
 .form__button {
@@ -68,11 +206,39 @@
 .form__required {
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $color-dark;
   text-transform: uppercase;
   text-align: center;
 }
 
 .form__required--text {
-  color: #d22856;
+  color: $color-pink;
+}
+
+.form__fieldset-app {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
+}
+
+.form__fieldset-contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.form__fieldset-achievements {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.form__fieldset-emotions {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
 }
