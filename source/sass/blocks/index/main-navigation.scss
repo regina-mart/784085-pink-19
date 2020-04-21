@@ -1,17 +1,10 @@
-.page-header {
-  position: relative;
-}
-
-.main-navigation {
-  // position: absolute;
-}
-
 .main-navigation__header {
   background-color: #000000;
   opacity: 0.3;
   display: flex;
-  min-height: 66px;
-  // position: absolute;
+  min-height: 70px;
+  width: 100%;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     min-height: 110px;
@@ -25,7 +18,14 @@
 }
 
 .main-navigation__toggle {
+  width: 50px;
+  height: 24px;
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.main-navigation__wrapper {
+  display: none;
+  padding-top: 70px;
 }

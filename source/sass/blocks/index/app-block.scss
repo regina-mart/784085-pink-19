@@ -6,9 +6,23 @@
   background-size: 100%;
   display: block;
   text-align: center;
+  padding-top: 28px;
+}
+
+.app-block__image--container {
+  position: relative;
+}
+
+.app-block__image {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 1;
 }
 
 .app-block__wrapper {
+  position: relative;
+  z-index: 2;
   @media (min-width: $tablet-width) {
     width: 300px;
     margin-right: auto;
@@ -17,6 +31,7 @@
 
 .app-block__text {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: #ffffff;
   width: 225px;
