@@ -2,6 +2,10 @@
   background-color: $color-grey;
 }
 
+.buy-block__slider {
+  margin-top: 67px;
+}
+
 .buy-block__list {
   border-collapse: collapse;
   text-align: center;
@@ -36,6 +40,8 @@
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 11px;
 }
 
 .buy-block__item--price {
@@ -46,6 +52,8 @@
   text-transform: uppercase;
   padding-left: 89px;
   padding-right: 89px;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .buy-block__item--options {
@@ -55,5 +63,12 @@
   text-align: left;
   padding-left: 22px;
   padding-right: 124px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   background-color: #ffffff;
+}
+
+.buy-block__toggles {
+  margin-top: 20px;
+  padding-bottom: 52px;
 }

@@ -4,9 +4,11 @@
 
 .contacts-block__text-caption {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: $color-dark;
   margin: 0 auto;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -26,6 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 37px;
   }
 }
 
