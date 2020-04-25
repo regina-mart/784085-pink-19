@@ -55,4 +55,10 @@ img {
 
 .promo-caption {
   padding-top: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 202px;
+    width: 186px;
+    margin: 0 auto;
+  }
 }

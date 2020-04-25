@@ -2,8 +2,19 @@
   background-color: $color-grey;
 }
 
+.buy-block--container-tablet {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
 .buy-block__slider {
   margin-top: 67px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+  }
 }
 
 .buy-block__list {
@@ -41,7 +52,12 @@
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 11px;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-top: 11px;
+  }
 }
 
 .buy-block__item--price {
@@ -50,10 +66,15 @@
   font-weight: 300;
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 89px;
-  padding-right: 89px;
+  // padding-left: 89px;
+  // padding-right: 89px;
   margin: 0;
-  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
 }
 
 .buy-block__item--options {
@@ -66,9 +87,21 @@
   padding-top: 14px;
   padding-bottom: 17px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 23px;
+  }
 }
 
 .buy-block__toggles {
   margin-top: 20px;
   padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
 }

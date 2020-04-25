@@ -12,8 +12,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     width: 375px;
+    margin-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,18 +28,24 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 37px;
+    justify-content: space-around;
+    margin-top: 13px;
   }
 }
 
 .contacts-block__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+  }
+}
+
+.contacts-block__item--3 {
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
   }
 }
 
@@ -52,4 +59,8 @@
   font-weight: 300;
   color: $color-pink;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
 }

@@ -5,6 +5,10 @@
 .reviews-block__slider {
   margin-top: 40px;
   margin-bottom: 72px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .reviews-block__slider-item {
@@ -19,6 +23,7 @@
 .reviews-block__user {
   @media (min-width: $tablet-width) {
     order: 2;
+    margin-top: 17px;
   }
 }
 
@@ -26,6 +31,10 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
@@ -38,6 +47,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     line-height: 30px;
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {

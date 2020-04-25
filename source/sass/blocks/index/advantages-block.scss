@@ -1,7 +1,3 @@
-.advantages-block__list {
-  background-color: $color-grey;
-}
-
 .advantages-block__text-promo-1 {
   font-size: 24px;
   line-height: 28px;
@@ -13,6 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 40px;
+    margin-top: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,8 +29,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     width: 347px;
+    margin-top: 4px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,14 +42,25 @@
   }
 }
 
+.advantages-block__list {
+  background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 17px;
+  }
+}
+
 .container-advantages-block {
   width: 280px;
   margin: 0 auto;
   padding-top: 82px;
 
   @media (min-width: $tablet-width) {
-    width: 310px;
+    width: 330px;
     margin-right: 0;
+    padding: 0;
+    padding-top: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,4 +120,10 @@
   margin: 0 auto;
   display: block;
   padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

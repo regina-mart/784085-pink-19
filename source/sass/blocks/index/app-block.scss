@@ -24,8 +24,9 @@
 .app-block__wrapper {
   position: relative;
   z-index: 2;
+
   @media (min-width: $tablet-width) {
-    width: 300px;
+    width: 335px;
     margin-right: auto;
   }
 }
@@ -40,7 +41,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
+    padding-bottom: 1px;
   }
 
   @media (min-width: $desktop-width) {

@@ -8,7 +8,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    min-height: 110px;
+    min-height: 111px;
     background-color: green;
   }
 
@@ -25,6 +25,11 @@
   margin-right: 25px;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
