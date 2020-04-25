@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 110px;
+    min-height: 111px;
     background-color: red;
   }
 }
@@ -48,4 +48,13 @@
 .main-navigation__wrapper {
   display: none;
   padding-top: 66px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+  }
 }

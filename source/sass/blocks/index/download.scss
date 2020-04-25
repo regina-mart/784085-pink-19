@@ -16,6 +16,10 @@
     width: 300px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
 }
 
 .download__button {
@@ -39,6 +43,9 @@
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
+    padding-left: 29px;
+    padding-right: 26px;
+    margin-left: 130px;
   }
 }
 
@@ -50,6 +57,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 60px;
     margin-left: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+    margin-left: 137px;
+    width: 205px;
   }
 }
 
@@ -104,5 +117,10 @@
     font-size: 18px;
     margin-top: 37px;
     margin-bottom: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 90px;
   }
 }

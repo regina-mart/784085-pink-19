@@ -58,7 +58,18 @@ img {
 
   @media (min-width: $tablet-width) {
     padding-top: 202px;
-    width: 186px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 217px;
+  }
+}
+
+.promo-caption-br-none {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

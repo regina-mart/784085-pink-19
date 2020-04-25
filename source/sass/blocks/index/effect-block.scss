@@ -38,3 +38,9 @@
     line-height: 30px;
   }
 }
+
+.effect-block-br-none {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
