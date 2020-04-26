@@ -3,22 +3,30 @@
   background-color: $color-dark;
   background-repeat: no-repeat;
   content: "";
-  // width: 19px;
-  // height: 19px;
-  min-height: 250px;
+  background-size: 100%;
+  min-height: 237px;
   display: block;
   text-align: center;
 }
 
 .user-photos__caption {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: #ffffff;
   margin: 0;
+  padding-top: 97px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
+    padding-top: 179px;
+    padding-bottom: 141px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 173px;
+    padding-bottom: 101px;
   }
 }
 
@@ -27,10 +35,20 @@
   line-height: 30px;
   color: $color-dark;
   text-align: center;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    margin: 0;
+    margin-top: 93px;
+    margin-bottom: 64px;
   }
+}
+
+.user-photo--chief {
+  position: relative;
 }
 
 .user-photo__label-text {
@@ -42,9 +60,30 @@
   background-color: $color-pink;
   padding-left: 20px;
   padding-right: 21px;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 5px;
+  padding-bottom: 7px;
   display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+    right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 66px;
+    right: 129px;
+  }
+}
+
+.user-photo__image--chief { //временно
+  padding-bottom: 127px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 504px;
+  }
 }
 
 .user-photo__content-wrapper {
@@ -52,7 +91,9 @@
   padding-left: 17px;
   text-align: left;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  min-height: 155px;
 }
 
 .user-photos__content-wrapper-2 {
@@ -60,6 +101,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 51px;
   }
 }
 
@@ -73,14 +115,15 @@
 
 .user-photo__user {
   display: flex;
-  // order: 1;
   width: 400px;
+  margin-top: 16px;
 }
 
 .user-photo__name,
 .user-photo__time,
 .user-photo__text {
   color: $color-dark;
+  margin: 0;
 }
 
 .user-photo__name {
@@ -96,13 +139,49 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $color-pink;
-  width: 400px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.user-photo__like--heart::before {
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 13px;
+  height: 12px;
+  margin-top: 5px;
+  margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-photo__like--heart::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 12px;
+    margin-top: 5px;
+    margin-left: 17px;
+  }
 }
 
 .user-photo__content-wrapper--chief {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    padding-left: 28px;
   }
 }
 
@@ -110,17 +189,34 @@
   @media (min-width: $tablet-width) {
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 25px;
+  }
 }
 
 .user-photo__text--chief {
   @media (min-width: $tablet-width) {
     order: 3;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 25px;
   }
 }
 
 .user-photo__like--chief {
   @media (min-width: $tablet-width) {
     order: 2;
-    width: 100px;
+    margin-top: 17px;
+    margin-left: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+    margin-left: 360px;
   }
 }
