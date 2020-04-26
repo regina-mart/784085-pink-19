@@ -2,18 +2,28 @@
   background-color: $color-grey;
 }
 
-.buy-block--container-tablet {
+.buy-block--container {
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .buy-block__slider {
-  margin-top: 67px;
+  padding-top: 66px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
+    padding-top: 85px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 95px;
   }
 }
 
@@ -58,6 +68,11 @@
     font-size: 16px;
     padding-top: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 15px;
+  }
 }
 
 .buy-block__item--price {
@@ -66,14 +81,17 @@
   font-weight: 300;
   color: #ffffff;
   text-transform: uppercase;
-  // padding-left: 89px;
-  // padding-right: 89px;
   margin: 0;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    padding-bottom: 21px;
   }
 }
 
@@ -95,6 +113,14 @@
     padding-left: 16px;
     padding-right: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-left: 21px;
+    padding-right: 65px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
 }
 
 .buy-block__toggles {
@@ -102,6 +128,6 @@
   padding-bottom: 52px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 23px;
+    display: none;
   }
 }

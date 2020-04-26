@@ -6,22 +6,6 @@
   }
 }
 
-.container-download {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 47px;
-  padding-bottom: 31px;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 69px;
-  }
-}
-
 .download__button {
   font-size: 18px;
   line-height: 18px;
@@ -38,30 +22,26 @@
   @media (min-width: $tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
-    margin-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
     padding-left: 29px;
     padding-right: 26px;
-    margin-left: 130px;
   }
 }
 
 .download__list {
   display: flex;
   margin-top: 46px;
-  margin-left: 17px;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
-    margin-left: 27px;
+    margin-left: 7px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 82px;
-    margin-left: 137px;
     width: 205px;
   }
 }
@@ -116,11 +96,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     margin-top: 37px;
-    margin-bottom: 79px;
+    padding-bottom: 109px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 55px;
-    margin-bottom: 90px;
+    padding-bottom: 122px;
   }
 }

@@ -8,6 +8,7 @@
   display: block;
   text-align: center;
   // padding-top: 28px;
+
 }
 
 .app-block__image--container {
@@ -24,15 +25,6 @@
 .app-block__wrapper {
   position: relative;
   z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    width: 335px;
-    margin-right: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 560px;
-  }
 }
 
 .app-block__text {
@@ -41,7 +33,7 @@
   font-weight: 300;
   color: #ffffff;
   display: inline-block;
-  padding-bottom: 291px;
+  padding-bottom: 260px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
