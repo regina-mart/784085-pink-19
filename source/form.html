@@ -48,8 +48,8 @@
         </div>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <section class="form__wrapper container">
-          <div class="form__user-data">
+        <section class="form__wrapper">
+          <div class="form__user-data form__user-data--container">
             <div class="form__surname form-flex">
               <label class="form__surname-label form__text form__text--width-1" for="form-surname">Фамилия:</label>
               <input class="form__surname-input input-field" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
@@ -60,14 +60,14 @@
             </div>
             <div class="form__patronymic form-flex">
               <label class="form__patronymic-label form__text form__text--width-3" for="form-patronymic">Отчество:</label>
-              <input class="form__patronymic-input input-field" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
+              <input class="form__patronymic-input input-field input-field--bottom-none" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
           <fieldset class="form__fieldset-achievements">
             <legend class="legend">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__achievements">
               <div class="container">
-                <p class="form__text caption-division">Ваши безбашенные достижения в путешествии</p>
+                <p class="form__text caption-division">Ваши безбашенные<br class="br-mobile"> достижения в путешествии</p>
                 <div class="form__achievements-list">
                   <input class="form__achievements-input visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
                     <label class="form__achievements-label label-text" for="selfie">Сделал селфи с акулой</label>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="form__email form-flex">
                   <label class="form__email-label form__text" for="form-email">Адрес почты</label>
-                  <input class="form__email-input input-field" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
+                  <input class="form__email-input input-field input-field--bottom-none" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
                 </div>
               </div>
             </div>
@@ -118,12 +118,14 @@
           </fieldset>
           <fieldset class="form__fieldset-emotions">
             <legend class="legend">Опишите свои эмоции</legend>
-              <label class="form__text caption-division" id="form-textarea">Опишите свои эмоции</label>
+              <label class="form__text caption-division caption-division--2" id="form-textarea">Опишите свои эмоции</label>
               <textarea class="form__textarea input-field" for="form-textarea" name="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="button-required-wrapper">
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__required">*<span class="form__required--text">— обязательные поля</span></p>
+            <div class="container">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__required">*<span class="form__required--text">— обязательные поля</span></p>
+            </div>
           </div>
         </section>
       </form>
