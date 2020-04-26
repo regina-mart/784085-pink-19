@@ -8,6 +8,12 @@
   }
 }
 
+.form__user-data--container {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+
 .form__user-data {
   @media (min-width: $tablet-width) {
     order: 1;
@@ -25,17 +31,27 @@
   }
 }
 
+.form__text {
+  margin-left: 21px;
+}
+
 .input-field {
   border: 2px solid #e5e5e5;
   border-radius: 3px;
   padding-left: 20px;
-  padding-right: 79px;
-  padding-top: 22px;
+  padding-right: 99px;
+  padding-top: 25px;
   padding-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     // width: 100%;
   }
+}
+
+.input-field--bottom-none {
+  margin-bottom: 0;
 }
 
 .form__text--width-1 {
@@ -89,9 +105,22 @@
 }
 
 .caption-division {
+  padding-top: 37px;
+  margin: 0 auto;
+  display: block;
+
   @media (min-width: $tablet-width) {
     font-size: 0;
   }
+}
+
+.caption-division--2 {
+  padding-top: 24px;
+  padding-bottom: 17px;
+}
+
+.form__achievements-list {
+  margin-top: 45px;
 }
 
 .form__achievements-list,
@@ -118,6 +147,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $color-dark;
+  padding-bottom: 52px;
 }
 
 .form__fieldset-app,
@@ -133,15 +163,20 @@
 }
 
 .legend {
-  font-size: 0;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     text-align: center;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
     color: $color-pink;
   }
+}
+
+.form__fieldset-contacts {
+  margin-top: 19px;
 }
 
 .form__contacts {
@@ -161,9 +196,19 @@
   }
 }
 
+.form__app-list {
+  padding-bottom: 44px;
+}
+
+.form__app-label {
+  padding-top: 42px;
+  padding-bottom: 3px;
+}
+
 .form__textarea {
   display: block;
   margin: auto;
+  min-height: 154px;
 
   @media (min-width: $tablet-width) {
     width: 496px;
@@ -195,12 +240,13 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #2aab6d;
-  padding-left: 45px;
-  padding-right: 46px;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  padding-left: 47px;
+  padding-right: 49px;
+  padding-top: 18px;
+  padding-bottom: 16px;
   border: none;
   border-radius: 3px;
+  margin-top: 39px;
 }
 
 .form__required {
@@ -209,6 +255,8 @@
   color: $color-dark;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 35px;
 }
 
 .form__required--text {
@@ -216,6 +264,8 @@
 }
 
 .form__fieldset-app {
+  margin-top: 28px;
+
   @media (min-width: $tablet-width) {
     order: 2;
   }
@@ -232,6 +282,8 @@
 }
 
 .form__fieldset-achievements {
+  margin-top: 37px;
+
   @media (min-width: $tablet-width) {
     order: 4;
   }
