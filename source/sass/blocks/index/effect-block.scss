@@ -40,8 +40,8 @@
 
 .effect-block__link {
   @media (min-width: $tablet-width) {
-   color: $color-pink;
- }
+    color: $color-pink;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

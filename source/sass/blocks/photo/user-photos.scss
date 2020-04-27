@@ -146,7 +146,7 @@
 }
 
 .user-photo__like--heart::before {
-  background-image: url(../img/icon-heart.svg);
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
@@ -165,7 +165,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     content: "";
     display: inline-block;

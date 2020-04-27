@@ -246,7 +246,7 @@
 
 .form__phone-input::after {
   @media (min-width: $tablet-width) {
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
