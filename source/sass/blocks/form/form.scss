@@ -17,15 +17,17 @@
     width: 620px;
     margin-top: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-left: 129px;
+    margin-right: 0;
+  }
 }
 
 .form__user-data {
   @media (min-width: $tablet-width) {
     order: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 431px;
   }
 }
 
@@ -108,6 +110,10 @@
     margin-left: 80px;
     margin-top: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .caption-division {
@@ -137,10 +143,6 @@
   }
 }
 
-.form__achievements-list {
-  margin-top: 45px;
-}
-
 .form__achievements-list,
 .form__app-list {
   display: flex;
@@ -148,10 +150,13 @@
 }
 
 .form__achievements-list {
+  margin-top: 45px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 5px;
   }
 }
 
@@ -207,11 +212,16 @@
     margin-top: 52px;
     padding-bottom: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .form__contacts {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -227,6 +237,10 @@
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 313px;
   }
 }
 
@@ -269,7 +283,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 816px;
+    width: 697px;
+    min-height: 79px;
   }
 }
 
@@ -280,9 +295,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  @media (min-width: $tablet-width) {
     order: 6;
   }
 }
@@ -307,6 +319,10 @@
     padding-left: 58px;
     padding-right: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+  }
 }
 
 .form__required {
@@ -321,10 +337,28 @@
   @media (min-width: $tablet-width) {
     margin-top: 86px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    margin-top: 83px;
+  }
 }
 
 .form__required--text {
   color: $color-pink;
+}
+
+.form__required--text-plus {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    display: inline;
+  }
 }
 
 .form__fieldset-app {
@@ -338,6 +372,8 @@
 
   @media (min-width: $desktop-width) {
     width: 431px;
+    margin-left: 69px;
+    margin-right: 0;
   }
 }
 
@@ -355,5 +391,10 @@
     margin-top: 51px;
     width: 620px;
     padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding-bottom: 44px;
   }
 }

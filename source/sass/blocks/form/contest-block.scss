@@ -3,7 +3,7 @@
   background-color: $color-dark;
   background-repeat: no-repeat;
   content: "";
-  min-height: 100px;
+  background-size: 100%;
   display: block;
   text-align: center;
 }
@@ -23,6 +23,19 @@
     padding-top: 179px;
     padding-bottom: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 172px;
+    padding-bottom: 102px;
+  }
+}
+
+.contest-block__promo-text--container {
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-top: 93px;
+    margin-bottom: 12px;
+  }
 }
 
 .contest-block__promo-text {
@@ -38,6 +51,10 @@
     line-height: 30px;
     margin-top: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .contest-block__promo-text--tablet {
@@ -46,5 +63,9 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

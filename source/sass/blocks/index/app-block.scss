@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   content: "";
   background-size: 100%;
-  min-height: 395px;
   display: block;
   text-align: center;
 }
@@ -31,16 +30,38 @@
   font-weight: 300;
   color: #ffffff;
   display: inline-block;
+  padding-top: 19px;
   padding-bottom: 260px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
     padding-bottom: 1px;
+    padding-top: 156px;
+    margin: 0 auto;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
+    padding-top: 148px;
+    margin-left: 161px;
+  }
+}
+
+.container-content {
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
   }
 }

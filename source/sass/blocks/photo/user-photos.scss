@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   content: "";
   background-size: 100%;
-  min-height: 237px;
   display: block;
   text-align: center;
 }
@@ -16,6 +15,7 @@
   color: #ffffff;
   margin: 0;
   padding-top: 97px;
+  padding-bottom: 84px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
