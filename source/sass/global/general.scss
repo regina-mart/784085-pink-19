@@ -53,21 +53,6 @@ img {
   }
 }
 
-.promo-caption {
-  padding-top: 19px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 156px;
-    margin: 0 auto;
-    margin-left: 41px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 148px;
-    margin-left: 161px;
-  }
-}
-
 .br-mobile {
   display: block;
 
@@ -101,21 +86,5 @@ img {
 
   @media (min-width: $desktop-width) {
     display: block;
-  }
-}
-
-.container-content {
-  margin: 0 auto;
-  padding-top: 47px;
-  padding-bottom: 31px;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    margin: 0;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 69px;
   }
 }
