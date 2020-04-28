@@ -40,6 +40,14 @@ img {
   }
 }
 
+// .app-block,
+.user-photos,
+.contest-block {
+  @media (min-width: $desktop-width) {
+    margin-top: -111px;
+  }
+}
+
 .container {
   width: 280px;
   margin: 0 auto;

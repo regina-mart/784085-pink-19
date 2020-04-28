@@ -1,6 +1,5 @@
 .main-navigation__header {
-  background-color: #000000;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   min-height: 66px;
   width: 100%;
@@ -8,12 +7,11 @@
 
   @media (min-width: $tablet-width) {
     min-height: 111px;
-    background-color: green;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 111px;
-    background-color: red;
+    position: relative;
   }
 }
 

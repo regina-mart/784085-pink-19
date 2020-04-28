@@ -15,6 +15,7 @@
 
 .buy-block__slider {
   padding-top: 66px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 85px;
