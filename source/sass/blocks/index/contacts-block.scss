@@ -4,20 +4,22 @@
 
 .contacts-block__text-caption {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: $color-dark;
   margin: 0 auto;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 40px;
-    width: 375px;
+    line-height: 48px;
+    margin-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
-    line-height: 50px;
-    width: 490px;
+    line-height: 60px;
+    margin-top: 63px;
   }
 }
 
@@ -25,17 +27,45 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
 
 .contacts-block__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+  }
+}
+
+.contacts-block__item--1 {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.contacts-block__item--2 {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.contacts-block__item--3 {
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    margin-top: 33px;
   }
 }
 
@@ -49,4 +79,12 @@
   font-weight: 300;
   color: $color-pink;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+  }
 }

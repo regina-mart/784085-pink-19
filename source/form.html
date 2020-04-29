@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,14 +11,14 @@
     <header class="page-header">
       <nav class="main-navigation">
           <div class="main-navigation__header">
-            <div class="container">
+            <div class="container main-navigation__header--container">
               <a class="main-navigation__logo-link">
                 <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
               </a>
-              <button class="main-navigation__toggle" type="button">Открыть меню</button>
+              <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           </div>
-          <div class="main-navigation__wrapper">
+          <div class="main-navigation__wrapper js-menu-closed">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="/index.html">Главная</a>
@@ -44,31 +43,32 @@
             <h1 class="contest-block__caption">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
         </div>
-        <div class="container">
-          <p class="contest-block__promo-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <div class="container contest-block__promo-text--container">
+          <p class="contest-block__promo-text">Поделитесь своей историей и получите шанс выиграть<br class="br-tablet"> ценный приз — 1000 миль на<br class="br-desktop"> вашу бонусную карту!</p>
+          <p class="contest-block__promo-text contest-block__promo-text--tablet">Пожалуйста, заполните форму ниже:</p>
         </div>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <section class="form__wrapper container">
-          <div class="form__user-data">
+        <section class="form__wrapper">
+          <div class="form__user-data form__user-data--container">
             <div class="form__surname form-flex">
-              <label class="form__surname-label form__text form__text--width-1" for="form-surname">Фамилия:</label>
-              <input class="form__surname-input input-field" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
+              <label class="form__surname-label form__text form__text--padding" for="form-surname">Фамилия:</label>
+              <input class="form__surname-input input-field input-field-user" type="text" name="form-surname" id="form-surname" placeholder="Укажите фамилию *" required>
             </div>
             <div class="form__name form-flex">
-              <label class="form__name-label form__text form__text--width-2" for="form-name">Имя:</label>
-              <input class="form__name-input input-field" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя *" required>
+              <label class="form__name-label form__text form__text--padding" for="form-name">Имя:</label>
+              <input class="form__name-input input-field input-field-user " type="text" name="form-name" id="form-name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="form__patronymic form-flex">
-              <label class="form__patronymic-label form__text form__text--width-3" for="form-patronymic">Отчество:</label>
-              <input class="form__patronymic-input input-field" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
+              <label class="form__patronymic-label form__text form__text--padding" for="form-patronymic">Отчество:</label>
+              <input class="form__patronymic-input input-field input-field-user input-field--bottom-none" type="text" name="form-patronymic" id="form-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
           <fieldset class="form__fieldset-achievements">
             <legend class="legend">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__achievements">
               <div class="container">
-                <p class="form__text caption-division">Ваши безбашенные достижения в путешествии</p>
+                <p class="form__text caption-division">Ваши безбашенные<br class="br-mobile"> достижения в путешествии</p>
                 <div class="form__achievements-list">
                   <input class="form__achievements-input visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
                     <label class="form__achievements-label label-text" for="selfie">Сделал селфи с акулой</label>
@@ -91,12 +91,16 @@
             <div class="container">
               <div class="form__contacts">
                 <div class="form__phone form-flex">
-                  <label class="form__phone-label form__text" for="form-phone">Номер телефона</label>
-                  <input class="form__phone-input input-field" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
+                  <label class="form__phone-label form__text form__text--contacts" for="form-phone">Номер телефона</label>
+                  <p class="form__phone-input--pseudo-element">
+                    <input class="form__phone-input input-field" type="tel" name="form-phone" id="form-phone" placeholder="Номер, пожалуйста">
+                  </p>
                 </div>
                 <div class="form__email form-flex">
-                  <label class="form__email-label form__text" for="form-email">Адрес почты</label>
-                  <input class="form__email-input input-field" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
+                  <label class="form__email-label form__text form__text--contacts form__text--contacts-2" for="form-email">Адрес почты</label>
+                  <p class="form__email-input--pseudo-element">
+                    <input class="form__email-input input-field input-field--bottom-none" type="email" name="form-email" id="form-email" placeholder="Введите почту *" required>
+                  </p>
                 </div>
               </div>
             </div>
@@ -105,7 +109,7 @@
             <legend class="legend">С каким приложением путешествовали?</legend>
             <div class="form__app">
               <div class="container">
-                <p class="form__text caption-division">С каким приложением путешествовали?</p>
+                <p class="form__text caption-division caption-division--2">С каким приложением путешествовали?</p>
                 <div class="form__app-list">
                   <input class="form__app-input visually-hidden" type="radio" name="system" value="ios" id="ios" value="ios" checked>
                   <label class="form__app-label label-text" for="ios">Pink для iOS</label>
@@ -119,12 +123,12 @@
           </fieldset>
           <fieldset class="form__fieldset-emotions">
             <legend class="legend">Опишите свои эмоции</legend>
-              <label class="form__text caption-division" id="form-textarea">Опишите свои эмоции</label>
+              <label class="form__text caption-division caption-division--3" id="form-textarea">Опишите свои эмоции</label>
               <textarea class="form__textarea input-field" for="form-textarea" name="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <div class="button-required-wrapper">
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__required">*<span class="form__required--text">— обязательные поля</span></p>
+          <div class="button-required-wrapper container">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__required"><span class="form__required--text">*</span> — обязательные<span class="form__required--text-plus"> для заполнения</span> поля</p>
           </div>
         </section>
       </form>

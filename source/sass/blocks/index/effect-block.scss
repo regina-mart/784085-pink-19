@@ -7,17 +7,28 @@
 }
 
 .effect-block--flex {
-  display: flex;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .effect-block__text-promo {
-  width: 310px;
-  margin-right: 0;
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-top: 96px;
+    margin-bottom: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 311px;
+  }
 }
 
 .effect-block__text-bold {
-  font-size: 30px;
-  line-height: 36px;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .effect-block__text {
@@ -28,10 +39,18 @@
 }
 
 .effect-block__link {
-  color: $color-pink;
+  @media (min-width: $tablet-width) {
+    color: $color-pink;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.effect-block-br-none {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

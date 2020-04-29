@@ -6,16 +6,6 @@
   }
 }
 
-.container-download {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    margin-left: 0;
-  }
-}
-
 .download__button {
   font-size: 18px;
   line-height: 18px;
@@ -24,15 +14,75 @@
   text-align: center;
   border: 3px solid #ffffff;
   border-radius: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
+    padding-left: 29px;
+    padding-right: 26px;
   }
 }
 
-// .download__item {
-//   list-style: none;
-// }
+.download__list {
+  display: flex;
+  margin-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+    width: 205px;
+  }
+}
+
+.download__item {
+  list-style: none;
+  margin-right: 35px;
+}
+
+.download__item--ios {
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 47px;
+  height: 56px;
+}
+
+.download__item--android {
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 47px;
+  margin-top: 9px;
+}
+
+.download__item--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 44px;
+  height: 41px;
+  margin-top: 12px;
+  margin-right: 0;
+}
 
 .download__text {
   font-size: 14px;
@@ -40,11 +90,17 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
-  width: 230px;
   margin: 0 auto;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    width: 294px;
+    margin-top: 37px;
+    padding-bottom: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    padding-bottom: 122px;
   }
 }

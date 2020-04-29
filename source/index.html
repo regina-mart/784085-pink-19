@@ -4,22 +4,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="body-wrapper">
-    <header class="page-header">
+      <header class="page-header">
       <nav class="main-navigation">
           <div class="main-navigation__header">
-            <div class="container">
+            <div class="container main-navigation__header--container">
               <a class="main-navigation__logo-link">
                 <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
               </a>
-              <button class="main-navigation__toggle" type="button">Открыть меню</button>
+              <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
           </div>
-          </div>
-          <div class="main-navigation__wrapper">
+          <div class="main-navigation__wrapper js-menu-closed">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Главная</a>
@@ -37,17 +36,20 @@
           </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Фотоприложение Pink</h1>
-      <section class="app-block">
-        <div class="container">
-          <img class="app-block__image" src="#" width="#" height="#" alt="Демонстрация приложения на смартфоне">
+      <main class="page-main">
+        <h1 class="visually-hidden">Фотоприложение Pink</h1>
+        <section class="app-block">
+        <div class="app-block__image--container">
+          <img class="app-block__image" src="img/iphone-hand-mobile@1x.png" width="260" height="285" alt="Демонстрация приложения на смартфоне">
         </div>
         <div class="app-block__wrapper">
-            <p class="app-block__text">Взгляните на жизнь иначе!</p>
-        <div class="app-block__download download">
-          <div class="container-download">
-              <a class="download__button" href="#">Скачать приложение</a>
+          <div class="container-content">
+            <p class="app-block__text">Взгляните<br class="br-tablet"> на жизнь<br> иначе!</p>
+          </div>
+          <div class="app-block__download download">
+            <div class="container">
+              <div class="container-content">
+              <a class="download__button" href="#">Скачать&nbsp;приложение</a>
               <ul class="download__list">
                 <li class="download__item download__item--ios">
                   <a href="#"><span class="visually-hidden">iOS</span></a>
@@ -59,52 +61,52 @@
                   <a href="#"><span class="visually-hidden">Windows</span></a>
                 </li>
               </ul>
-              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="advantages-block">
+        <section class="advantages-block">
           <div class="container">
             <p class="advantages-block__text-promo-1">Устали от серости мегаполиса?</p>
-            <p class="advantages-block__text-promo-2">Нам есть, что вам предложить!</p>
+            <p class="advantages-block__text-promo-2">Нам есть, что вам<br> предложить!</p>
         </div>
         <div class="advantages-block__list">
-          <div class="container-advantages-block">
+          <div class="container advantages-block__list--container">
+            <div class="container-advantages-block">
             <div class="advantages-block__item">
-                <b class="advantages-block__text-bold">Поднимает настроение</b>
-                <p class="advantages-block__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <b class="advantages-block__text-bold">Поднимает<br class="br-desktop"> настроение</b>
+                <p class="advantages-block__text">Приложение позволит вам<br class="br-desktop"> победить<br class="br-mobile"><br class="br-tablet"> осеннюю хандру<br class="br-desktop"> и депрессию<br class="br-mobile"> буквально в<br class="br-tablet"><br class="br-desktop"> несколько кликов!</p>
               </div>
             <div class="advantages-block__item">
-                <b class="advantages-block__text-bold">Меняет мир вокруг</b>
-                <p class="advantages-block__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <b class="advantages-block__text-bold">Меняет мир<br class="br-desktop"> вокруг</b>
+                <p class="advantages-block__text">Сделайте снимок и<br class="br-desktop"> украсьте его<br class="br-mobile"> смайликом<br class="br-tablet"><br class="br-desktop"> или текстовой подписью,<br class="br-mobile"><br class="br-desktop"> чтобы<br class="br-tablet"> усилить эффект</p>
               </div>
             <div class="advantages-block__item">
-                <b class="advantages-block__text-bold">Заводит новых друзей</b>
-                <p class="advantages-block__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <b class="advantages-block__text-bold">Заводит<br class="br-desktop"> новых друзей</b>
+                <p class="advantages-block__text">Ставьте лайки,<br class="br-desktop"> комментируйте,<br class="br-mobile"> делитесь<br class="br-tablet"><br class="br-desktop"> фотографиями с друзьями<br class="br-mobile"><br class="br-desktop"> и заводите новых</p>
               </div>
           </div>
-          <div class="advantages-block__image-list">
-            <img class="advantages-block__image advantages-block__image-secondary" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
-            <img class="advantages-block__image advantages-block__image-secondary" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
-            <img class="advantages-block__image advantages-block__image-chief" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
+            <div class="advantages-block__image-list">
+            <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-1" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
+            <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-2" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
+            <img class="advantages-block__image advantages-block__image-chief advantages-block__image-3" src="img/iphone-screen-3-tablet@1x.png" width="157" height="279" alt="Демонстрация одной из возможностей приложения">
+          </div>
           </div>
         </div>
       </section>
-      <section class="effect-block">
+        <section class="effect-block">
         <div class="container effect-block--flex">
           <img class="effect-block__image" src="#" width="#" height="#" alt="Часы">
           <div class="effect-block__text-promo">
-            <b class="effect-block__text-bold">Эффект на 24 часа!</b>
-            <p class="effect-block__text">Британские ученые провели исследования
-            и доказали, что положительный эффект
-            от использования приложения длится
-            целые сутки!</p>
+            <b class="effect-block__text-bold">Эффект<br class="br-tablet"> на 24 часа!</b>
+            <p class="effect-block__text">Британские ученые провели исследования<br class="br-tablet"> и доказали,<br class="br-desktop"> что положительный эффект<br class="br-tablet"> от использования приложения<br class="br-desktop"> длится<br class="br-tablet"> целые сутки!</p>
             <a class="effect-block__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
-      <section class="reviews-block">
+        <section class="reviews-block">
           <div class="container">
             <div class="reviews-block__slider slider">
               <div class="reviews-block__slider-item slider__item">
@@ -112,7 +114,7 @@
                   <b class="reviews-block__name">Николай Петров</b>
                   <p class="reviews-block__about-user">25 лет, водитель трамвая</p>
                 </div>
-                <p class="reviews-block__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews-block__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на<br class="br-desktop"> привычные серые вещи! А еще я познакомился со своей будущей женой в<br class="br-desktop"> комментариях к выложенной фотографии!»</p>
               </div>
               <!-- <div class="reviews-block__item slider__item">
                 <b class="reviews-block__name">Николай Петров</b>
@@ -130,8 +132,9 @@
             </div>
           </div>
       </section>
-      <section class="buy-block">
-        <div class="buy-block__slider slider">
+        <section class="buy-block">
+        <div class="buy-block--container">
+          <div class="buy-block__slider slider">
           <table class="buy-block__list slider__list">
             <tr>
               <td class="buy-block__item buy-block__item--border-none buy-block__item--secondary"></td>
@@ -139,20 +142,20 @@
                 <p class="buy-block__item--text">База</p>
                 <p class="buy-block__item--price">1,99 USD
               </td>
-              <td class="buy-block__item buy-block__item--text buy-block__item--background buy-block__item--tariff">
+              <td class="buy-block__item buy-block__item--background buy-block__item--tariff">
                 <p class="buy-block__item--text">Стандарт</p>
                 <p class="buy-block__item--price">3,99 USD
               </td>
-              <td class="buy-block__item buy-block__item--text buy-block__item--background">
+              <td class="buy-block__item buy-block__item--background">
                 <p class="buy-block__item--text">Анлим</p>
                 <p class="buy-block__item--price">9,99 USD</p>
               </td>
             </tr>
             <tr>
-              <td class="buy-block__item buy-block__item--options buy-block__item--yes buy-block__item--secondary">Розовый фильтр</td>
-              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
-              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
-              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes buy-block__item--secondary">Розовый&nbsp;фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый&nbsp;фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый&nbsp;фильтр</td>
+              <td class="buy-block__item buy-block__item--options buy-block__item--yes">Розовый&nbsp;фильтр</td>
             </tr>
             <tr>
               <td class="buy-block__item buy-block__item--options buy-block__item--no buy-block__item--secondary">Смайлики</td>
@@ -168,33 +171,34 @@
             </tr>
           </table>
         </div>
-        <div class="buy-block__toggles slider__toggles">
+          <div class="buy-block__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </div>
+        </div>
       </section>
-      <section class="contacts-block">
+        <section class="contacts-block">
           <div class="container">
-            <p class="contacts-block__text-caption">Остались вопросы? Свяжитесь с нами!</p>
+            <p class="contacts-block__text-caption">Остались вопросы?<br> Свяжитесь с нами!</p>
             <div class="contacts-block__list">
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--1">
               <b class="contacts-block__text-bold">Звоните:</b>
               <a class="contacts-block__phone contacts-block__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--2">
               <b class="contacts-block__text-bold">Пишите:</b>
               <a class="contacts-block__mail contacts-block__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--3">
               <b class="contacts-block__text-bold">Приезжайте в гости:</b>
               <p class="contacts-block__address contacts-block__text">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
           </div>
       </section>
-    </main>
-    <footer class="footer-index">
+      </main>
+      <footer class="footer-index">
       <iframe class="footer-index__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871589724!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585751098943!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="container page-footer-index">
         <a class="page-footer__logo-link">
@@ -208,6 +212,6 @@
         <a class="page-footer__developed page-footer__developed--icon" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
     </footer>
-  </div>
+    </div>
   </body>
 </html>
