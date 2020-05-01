@@ -13,7 +13,11 @@
           <div class="main-navigation__header">
             <div class="container main-navigation__header--container">
               <a class="main-navigation__logo-link">
-                <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="main-navigation__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+                </picture>
               </a>
               <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
@@ -40,7 +44,11 @@
         <h1 class="visually-hidden">Фотоприложение Pink</h1>
         <section class="app-block">
         <div class="app-block__image--container">
-          <img class="app-block__image" src="img/iphone-hand-mobile@1x.png" width="260" height="285" alt="Демонстрация приложения на смартфоне">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="app-block__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Демонстрация приложения на смартфоне">
+          </picture>
         </div>
         <div class="app-block__wrapper">
           <div class="container-content">

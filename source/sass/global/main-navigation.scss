@@ -20,6 +20,14 @@
   justify-content: space-between;
 }
 
+.main-navigation__logo-link {
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
 .main-navigation__toggle {
   width: 50px;
   height: 24px;
