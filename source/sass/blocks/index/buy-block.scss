@@ -124,6 +124,26 @@
   }
 }
 
+.buy-block__item--yes::after {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 31px;
+  height: 21px;
+}
+
+.buy-block__item--no::after {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 26px;
+}
+
 .buy-block__toggles {
   margin-top: 20px;
   padding-bottom: 52px;

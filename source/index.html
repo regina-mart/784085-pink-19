@@ -97,16 +97,26 @@
               </div>
           </div>
             <div class="advantages-block__image-list">
-            <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-1" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
-            <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-2" src="#" width="#" height="#" alt="Демонстрация одной из возможностей приложения">
-            <img class="advantages-block__image advantages-block__image-chief advantages-block__image-3" src="img/iphone-screen-3-tablet@1x.png" width="157" height="279" alt="Демонстрация одной из возможностей приложения">
+              <picture>
+                <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-1" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Демонстрация одной из возможностей приложения">
+              </picture>
+            <picture>
+              <img class="advantages-block__image advantages-block__image-secondary advantages-block__image-2" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Демонстрация одной из возможностей приложения">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 2x 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="advantages-block__image advantages-block__image-chief advantages-block__image-3" src="img/iphone-screen-mobile@1x.png" srcset="iphone-screen-mobile@2x.png 2x" alt="Демонстрация одной из возможностей приложения">
+            </picture>
           </div>
           </div>
         </div>
       </section>
         <section class="effect-block">
         <div class="container effect-block--flex">
-          <img class="effect-block__image" src="#" width="#" height="#" alt="Часы">
+          <div class="effect-block__timer-wrapper">
+            <p class="effect-block__timer-text">24</p>
+          </div>
           <div class="effect-block__text-promo">
             <b class="effect-block__text-bold">Эффект<br class="br-tablet"> на 24 часа!</b>
             <p class="effect-block__text">Британские ученые провели исследования<br class="br-tablet"> и доказали,<br class="br-desktop"> что положительный эффект<br class="br-tablet"> от использования приложения<br class="br-desktop"> длится<br class="br-tablet"> целые сутки!</p>

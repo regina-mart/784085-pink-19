@@ -12,6 +12,56 @@
   }
 }
 
+.effect-block__timer-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 96px;
+    margin-left: 16px;
+  }
+}
+
+.effect-block__timer-text {
+  @media (min-width: $tablet-width) {
+    font-size: 96px;
+    margin: 0;
+    line-height: 166px;
+    font-weight: 700;
+    color: #d22856;
+    border: 15px solid $color-pink;
+    border-radius: 108px;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 206px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 120px;
+    margin: 0;
+    line-height: 178px;
+    font-weight: 700;
+    color: #d22856;
+    border: 15px solid $color-pink;
+    border-radius: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
+    box-sizing: border-box;
+    height: 215px;
+  }
+}
+
+.effect-block__timer-text::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 238px;
+    height: 276px;
+    margin-top: 9px;
+    position: absolute;
+  }
+}
 .effect-block__text-promo {
   @media (min-width: $tablet-width) {
     margin-right: 0;

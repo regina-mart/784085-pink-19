@@ -120,6 +120,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-top: 7px;
   }
 }
 
@@ -134,5 +135,4 @@
 .advantages-block__image-3 {
   margin: 0 auto;
   display: block;
-  padding-top: 7px;
 }
