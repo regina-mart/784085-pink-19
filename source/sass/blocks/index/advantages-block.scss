@@ -39,7 +39,7 @@
     font-size: 50px;
     line-height: 60px;
     margin-top: 0;
-    margin-bottom: 77px;
+    margin-bottom: 75px;
   }
 }
 
@@ -73,8 +73,26 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding-top: 64px;
+    padding-top: 56px;
+    margin: 0;
+  }
+}
+
+.advantages-block__item--1 {
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
+  }
+}
+
+.advantages-block__item--2 {
+  @media (min-width: $desktop-width) {
+    margin-left: 98px;
+  }
+}
+
+.advantages-block__item--3 {
+  @media (min-width: $desktop-width) {
+    margin-left: 102px;
   }
 }
 
@@ -119,7 +137,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-top: 7px;
+    justify-content: space-between;
   }
 }
 
