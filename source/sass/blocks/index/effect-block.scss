@@ -3,13 +3,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 46px;
+    margin-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-grey;
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 35px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 .effect-block__text-promo {
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
+    margin-top: 36px;
     margin-bottom: 97px;
     margin-left: 71px;
   }
@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 113px;
     margin-left: 70px;
-    margin-top: 108px;
+    margin-top: 92px;
   }
 }
 

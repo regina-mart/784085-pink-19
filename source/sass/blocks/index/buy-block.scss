@@ -68,6 +68,10 @@
   @media (min-width: $tablet-width) {
     width: 153px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
 }
 
 .buy-block__item--label::before {
@@ -161,7 +165,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: auto;
+    margin-top: 2px;
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 84px;
   }
 }
 
@@ -176,7 +186,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: auto;
+    margin-top: 2px;
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 84px;
   }
 }
 
