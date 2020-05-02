@@ -32,6 +32,14 @@
   border-collapse: collapse;
   text-align: center;
   width: 840px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .buy-block__item {
@@ -46,6 +54,7 @@
 
   @media (min-width: $tablet-width) {
     display: table-cell;
+    width: 138px;
   }
 }
 
@@ -55,6 +64,25 @@
 
 .buy-block__item--background {
   background-color: $color-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+}
+
+.buy-block__item--label::before {
+  // background-image: url("../img/icon-yes.svg");
+  // background-repeat: no-repeat;
+  // content: "";
+  // display: inline-block;
+  // vertical-align: top;
+  // width: 31px;
+  // height: 21px;
+  //
+  // @media (min-width: $tablet-width) {
+  //   display: block;
+  //   margin: auto;
+  // }
 }
 
 .buy-block__item--text {
@@ -130,6 +158,11 @@
   vertical-align: top;
   width: 31px;
   height: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: auto;
+  }
 }
 
 .buy-block__item--no::after {
@@ -140,6 +173,19 @@
   vertical-align: top;
   width: 27px;
   height: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: auto;
+  }
+}
+
+.buy-block__item--text-none {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .buy-block__toggles {

@@ -39,7 +39,7 @@
     font-size: 50px;
     line-height: 60px;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
   }
 }
 
@@ -50,7 +50,6 @@
 .advantages-block__list--container {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,9 +64,9 @@
 
   @media (min-width: $tablet-width) {
     width: 330px;
-    margin-right: 0;
+    margin-left: 42px;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 76px;
     order: 2;
   }
 
@@ -135,4 +134,9 @@
 .advantages-block__image-3 {
   margin: 0 auto;
   display: block;
+  padding-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0px;
+  }
 }

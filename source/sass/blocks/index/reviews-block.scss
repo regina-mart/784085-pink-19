@@ -1,9 +1,18 @@
 .reviews-block {
   display: flex;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-top: -42px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+    margin-top: 9px;
+  }
 }
 
 .reviews-block__slider {
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 72px;
 
   @media (min-width: $tablet-width) {
