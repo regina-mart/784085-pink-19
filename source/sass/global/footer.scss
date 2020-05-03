@@ -67,7 +67,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-top: 29px;
+    margin-top: 77px;
     margin-bottom: 36px;
   }
 
@@ -130,6 +130,17 @@ svg:focus .page-footer__logo-image--color {
   }
 }
 
+.page-footer__social-list--form {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-left: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+    margin-left: 25px;
+  }
+}
 .page-footer__social-item {
     padding-right: 10px;
     position: relative;
@@ -201,6 +212,16 @@ svg:focus .page-footer__logo-image--color {
 }
 
 .page-footer__developed--photo {
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
+  }
+}
+
+.page-footer__developed--form {
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 12px;
   }
