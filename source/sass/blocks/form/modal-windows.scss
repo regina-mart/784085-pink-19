@@ -2,6 +2,7 @@
 .modal-application-sent {
   background-color: #ffffff;
   margin: auto;
+  display: none;
 
   @media (min-width: $tablet-width) {
     width: 460px;
