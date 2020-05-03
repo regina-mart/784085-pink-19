@@ -90,6 +90,12 @@
   }
 }
 
+.page-footer__social-list--photo {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+}
+
 .page-footer__social-item {
     padding-right: 10px;
     position: relative;
