@@ -85,6 +85,10 @@
   position: relative;
 }
 
+.user-photo--secondary {
+  margin-top: 20px;
+}
+
 .user-photo__label-text {
   font-size: 12px;
   line-height: 24px;
@@ -121,6 +125,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding: 30px;
@@ -144,6 +149,10 @@
   @media (min-width: $tablet-width) {
     width: 300px;
   }
+}
+
+.user-photo__image {
+  vertical-align: top;
 }
 
 .user-photo__content {

@@ -71,8 +71,8 @@
           </div>
         </article>
         <div class="container">
-          <div class="user-photos__content-wrapper-all">
-        <article class="user-photos__item user-photo">
+      <div class="user-photos__content-wrapper-all">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -92,7 +92,7 @@
               <p class="user-photo__like user-photo__like--heart">Нравится: 356</p>
             </div>
         </article>
-        <article class="user-photos__item user-photo">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -113,7 +113,7 @@
             </div>
           </div>
         </article>
-        <article class="user-photos__item user-photo">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -134,7 +134,7 @@
             </div>
           </div>
         </article>
-        <article class="user-photos__item user-photo">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -155,7 +155,7 @@
             </div>
           </div>
         </article>
-        <article class="user-photos__item user-photo">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -176,7 +176,7 @@
             </div>
           </div>
         </article>
-        <article class="user-photos__item user-photo">
+        <article class="user-photos__item user-photo user-photo--secondary">
           <div class="container-user-photos">
             <a class="user-photo__image-link" href="#">
               <picture>
@@ -202,43 +202,60 @@
       </section>
       <section class="publication-block">
         <div class="container">
-          <p class="publication-block__text">Затмите их всех!<br class="br-tablet"><br class="br-desktop"> Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="publication-block__text">Затмите их всех!<br class="br-mobile"><br class="br-tablet"><br class="br-desktop"> Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
           <div class="publication-block__post">
-            <picture>
+            <div class="container">
+             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x">
               <img class="publication-block__image" src="img/photo-road-mobile@1x.jpg" alt="Зима">
-            </picture>
-            <div class="publication-block__tool-controls">
+             </picture>
+             <div class="publication-block__tool-controls">
               <input class="visually-hidden" type="radio" name="tool" value="tool-1" id="tool-1" checked/>
               <input class="visually-hidden" type="radio" name="tool" value="tool-2" id="tool-2"/>
               <input class="visually-hidden" type="radio" name="tool" value="tool-3" id="tool-3"/>
-            </div>
-            <div class="publication-block__tools">
-              <label class="publication-block__tool publication-block__tool--crop publication-block__tools--active" for="tool-1">
+             </div>
+             <div class="publication-block__tools">
+              <label class="publication-block__tool  publication-block__tools--active" for="tool-1">
                 <span class="visually-hidden">Обрезка</span>
+                <svg class="publication-block__tool--crop" fill="#b5b9be" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
               </label>
-              <label class="publication-block__tool publication-block__tool--fill" for="tool-2">
+              <label class="publication-block__tool" for="tool-2">
                 <span class="visually-hidden">Заливка</span>
+                <svg class="publication-block__tool--fill" fill="#b5b9be" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
               </label>
-              <label class="publication-block__tool publication-block__tool--brightness-contrast" for="tool-3">
+              <label class="publication-block__tool" for="tool-3">
                 <span class="visually-hidden">Яркость-контраст</span>
+                <svg class="publication-block__tool--contrast" fill="#b5b9be" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
               </label>
-              <div class="publication-block__tools-scale scale scale--active">
-                <div class="scale__line"><span class="visually-hidden">Шкала-1</span></div>
-                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
-                <div class="scale__line"><span class="visually-hidden">Шкала-2</span></div>
-                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
-                <div class="scale__line"><span class="visually-hidden">Шкала-3</span></div>
-                <div class="scale__range-circle"><span class="visually-hidden">Ползунок</span></div>
-              </div>
             </div>
-            <div class="publication-block__buttons">
+            <div class="publication-block__tools-scale scale scale--active">
+              <div class="scale__line scale__line--first"><span class="visually-hidden">Шкала-1</span></div>
+              <div class="scale__range-circle scale__range-circle--1"><span class="visually-hidden">Ползунок</span></div>
+              <div class="scale__line scale__line--secondary"><span class="visually-hidden">Шкала-2</span></div>
+              <div class="scale__range-circle scale__range-circle--2"><span class="visually-hidden">Ползунок</span></div>
+              <div class="scale__line scale__line--secondary"><span class="visually-hidden">Шкала-3</span></div>
+              <div class="scale__range-circle scale__range-circle--3"><span class="visually-hidden">Ползунок</span></div>
+            </div>
+          </div>
+          <div class="publication-block__line"><span class="visually-hidden">Линия</span></div>
+          <div class="container">
+             <div class="publication-block__buttons">
               <button class="publication-block__button publication-button" type="submit" name="button">Запостить</button>
               <button class="publication-block__button publication-button publication-button--cancel" type="reset" name="button">Отмена</button>
             </div>
           </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
