@@ -123,7 +123,7 @@
 }
 
 .caption-division {
-  padding-top: 43px;
+  padding-top: 38px;
   margin: 0 auto;
   display: block;
 
@@ -156,7 +156,7 @@
 }
 
 .form__achievements-list {
-  margin-top: 45px;
+  margin-top: 40px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -164,6 +164,19 @@
     flex-wrap: wrap;
     padding-bottom: 5px;
   }
+}
+
+.form__achievements-label::before {
+  background-color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  margin-bottom: 43px;
+  margin-right: 30px;
 }
 
 .form__achievements-label {
@@ -176,7 +189,10 @@
   font-size: 18px;
   line-height: 30px;
   color: $color-dark;
-  padding-bottom: 52px;
+}
+
+.label-text-1 {
+  padding-top: 5px;
 }
 
 .form__fieldset-app,
@@ -360,7 +376,10 @@
 .form__textarea {
   display: block;
   margin: auto;
-  min-height: 154px;
+  min-height: 202px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  width: 281px;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -464,7 +483,7 @@
 }
 
 .form__fieldset-achievements {
-  margin-top: 37px;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     order: 4;
