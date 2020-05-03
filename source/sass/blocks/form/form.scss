@@ -177,11 +177,20 @@
   content: "";
   margin-bottom: 43px;
   margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+    margin-right: 30px;
+  }
 }
 
 .form__achievements-label {
   @media (min-width: $desktop-width) {
-    width: 236px;
+    width: 250px;
   }
 }
 
@@ -382,9 +391,11 @@
   width: 281px;
 
   @media (min-width: $tablet-width) {
-    width: 376px;
+    width: 500px;
     margin-top: 30px;
-    min-height: 147px;
+    min-height: 196px;
+    box-sizing: border-box;
+    padding-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -487,6 +498,11 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
+    margin-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 38px;
   }
 }
 
