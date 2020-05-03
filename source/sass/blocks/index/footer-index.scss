@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
+    margin-top: 87px;
     margin-bottom: 70px;
   }
 }
@@ -93,6 +93,11 @@
 .page-footer__social-list--photo {
   @media (min-width: $tablet-width) {
     margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+    margin-left: 25px;
   }
 }
 
@@ -164,6 +169,12 @@
     @media (min-width: $tablet-width) {
       margin-top: 0;
     }
+}
+
+.page-footer__developed--photo {
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
+  }
 }
 
 .page-footer__developed--text {

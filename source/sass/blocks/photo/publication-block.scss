@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 781px;
+    width: 821px;
     margin: 0 auto;
   }
 }
@@ -47,6 +47,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
   }
 }
 
@@ -101,6 +105,7 @@
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 43px;
+    margin-top: 26px;
   }
 }
 
@@ -120,6 +125,7 @@
   @media (min-width: $desktop-width) {
     width: 32px;
     height: 32px;
+    margin-top: 23px;
   }
 }
 
@@ -150,6 +156,11 @@
     margin-left: 28px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
+    margin-left: 44px;
+  }
 }
 
 .scale__line {
@@ -162,6 +173,10 @@
   @media (min-width: $tablet-width) {
     width: 202px;
     margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
@@ -201,6 +216,13 @@
     margin-top: 33px;
     margin-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: 86px;
+    display: block;
+    margin-bottom: 17px;
+  }
 }
 
 .publication-button {
@@ -219,6 +241,10 @@
     padding-bottom: 15px;
     width: 261px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 184px;
+  }
 }
 
 .publication-button--cancel {
@@ -228,5 +254,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 39px;
   }
 }
