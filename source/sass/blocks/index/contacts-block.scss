@@ -48,6 +48,10 @@
 .contacts-block__item--1 {
   margin-top: 37px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 1;
   }
@@ -55,6 +59,10 @@
 
 .contacts-block__item--2 {
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     order: 3;

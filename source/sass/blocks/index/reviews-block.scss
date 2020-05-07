@@ -33,7 +33,7 @@
 
 .reviews-block__slider {
   margin-top: 42px;
-  margin-bottom: 72px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 }
 

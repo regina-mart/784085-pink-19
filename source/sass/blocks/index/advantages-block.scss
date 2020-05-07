@@ -56,10 +56,22 @@
   display: inline-block;
   vertical-align: top;
   width: 322px;
-  height: 123px;
+  height: 26px;
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 52px;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 95px;
+    z-index: 0;
+  }
 }
 
 .advantages-block__list--container {
@@ -69,6 +81,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -148,6 +162,8 @@
 .advantages-block__image-list {
   @media (min-width: $tablet-width) {
     order: 1;
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {

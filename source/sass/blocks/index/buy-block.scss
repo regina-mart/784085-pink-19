@@ -1,7 +1,31 @@
 .buy-block {
   background-color: $color-grey;
+  position: relative;
 }
 
+.buy-block::before  {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 322px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 95px;
+  }
+}
 .buy-block--container {
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -14,7 +38,7 @@
 }
 
 .buy-block__slider {
-  padding-top: 66px;
+  padding-top: 90px;
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
+    padding-top: 146px;
     padding-bottom: 95px;
   }
 }
@@ -72,21 +96,6 @@
   @media (min-width: $desktop-width) {
     width: 160px;
   }
-}
-
-.buy-block__item--label::before {
-  // background-image: url("../img/icon-yes.svg");
-  // background-repeat: no-repeat;
-  // content: "";
-  // display: inline-block;
-  // vertical-align: top;
-  // width: 31px;
-  // height: 21px;
-  //
-  // @media (min-width: $tablet-width) {
-  //   display: block;
-  //   margin: auto;
-  // }
 }
 
 .buy-block__item--text {

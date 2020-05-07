@@ -15,6 +15,18 @@
   top: 43px;
   left: 0;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 69px;
+    top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 125px;
+    top: 21px;
+  }
 }
 
 .footer-index__map {
@@ -33,7 +45,7 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 500px;
-    margin-top: 28px;
+    margin-top: 21px;
   }
 }
 
@@ -49,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
+    margin-top: 66px;
     margin-bottom: 70px;
   }
 }
@@ -136,6 +148,10 @@ svg:focus .page-footer__logo-image--color {
     margin-top: 2px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
 }
 
 .page-footer__social-list--photo {
@@ -160,6 +176,7 @@ svg:focus .page-footer__logo-image--color {
     margin-left: 25px;
   }
 }
+
 .page-footer__social-item {
     padding-right: 10px;
     position: relative;

@@ -98,8 +98,16 @@
 }
 
 .user-photo__image--chief {
-  // width: 100%;
-  // height: auto;
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    height: 509px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .user-photo__label-text {
@@ -240,7 +248,11 @@
     width: 13px;
     height: 12px;
     margin-top: 5px;
-    margin-left: 17px;
+    margin-left: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
   }
 }
 
