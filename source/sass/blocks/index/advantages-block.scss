@@ -45,6 +45,21 @@
 
 .advantages-block__list {
   background-color: $color-grey;
+  position: relative;
+}
+
+.advantages-block__list::before {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 322px;
+  height: 123px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .advantages-block__list--container {

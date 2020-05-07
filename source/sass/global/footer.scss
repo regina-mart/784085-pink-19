@@ -5,13 +5,14 @@
 .footer-index::before {
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   content: "";
   display: inline-block;
   vertical-align: top;
   width: 320px;
   height: 123px;
   position: absolute;
-  top: 0;
+  top: 43px;
   left: 0;
   z-index: 1;
 }
@@ -21,7 +22,7 @@
   z-index: 0;
   width: 320px;
   height: 200px;
-  margin-top: 51px;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
