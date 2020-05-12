@@ -82,6 +82,12 @@
   }
 }
 
+.form__app--container {
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
+}
+
 .form__achievements,
 .form__app {
   background-color: $color-grey;
