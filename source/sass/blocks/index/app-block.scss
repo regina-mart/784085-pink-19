@@ -62,6 +62,10 @@
   }
 }
 
+.app-block__image--top {
+  top: 112px;
+}
+
 .app-block__wrapper {
   position: relative;
 }
@@ -72,8 +76,7 @@
   font-weight: 300;
   color: #ffffff;
   display: inline-block;
-  padding-top: 19px;
-  padding-bottom: 260px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -94,8 +97,9 @@
 
 .container-content {
   margin: 0 auto;
-  padding-top: 47px;
-  padding-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 55px;
+  min-height: 317px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -106,4 +110,9 @@
   @media (min-width: $desktop-width) {
     padding-top: 69px;
   }
+}
+
+.container-content--padding {
+  padding-top: 0;
+  padding-top: 27px;
 }
