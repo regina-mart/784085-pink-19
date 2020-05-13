@@ -88,6 +88,14 @@
   }
 }
 
+.reviews-block__slider-item:focus::before {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    outline: 2px solid #68A2F9;
+  }
+}
+
 .reviews-block__slider-item::after {
   display: none;
 

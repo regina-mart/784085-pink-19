@@ -61,6 +61,10 @@
   height: 56px;
 }
 
+.download__item--ios:focus {
+  outline: 2px solid #68A2F9;
+}
+
 .download__item--android {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
