@@ -75,12 +75,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-top: 29px;
+    margin-top: 26px;
     margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 87px;
+    margin-top: 85px;
     margin-bottom: 70px;
   }
 }
@@ -96,7 +96,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-top: 77px;
+    margin-top: 70px;
     margin-bottom: 36px;
   }
 
@@ -154,7 +154,8 @@ svg:focus .page-footer__logo-image--color {
 
 .page-footer__social-list--photo {
   @media (min-width: $tablet-width) {
-    margin-top: 9px;
+    margin-top: 12px;
+    margin-left: -6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -165,7 +166,7 @@ svg:focus .page-footer__logo-image--color {
 
 .page-footer__social-list--form {
   @media (min-width: $tablet-width) {
-    margin-top: 8px;
+    margin-top: 17px;
     margin-left: -5px;
   }
 
@@ -262,19 +263,32 @@ svg:focus .page-footer__logo-image--color {
 }
 
 .page-footer__developed--text {
-    margin-top: 17px;
-    color: #000000;
+  margin-top: 17px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
+    margin-top: 19px;
   }
 }
 
 .page-footer__developed--icon {
-    padding-left: 15px;
-    margin-top: 14px;
-    display: block;
+  padding-left: 15px;
+  margin-top: 14px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
+  }
 }
 
 .page-footer__developed-icon--color:hover {
