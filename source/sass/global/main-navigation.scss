@@ -72,29 +72,3 @@
     padding: 0;
   }
 }
-
-.no-js {
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    // background-color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.main-navigation__header--background {
-  background-color: $color-dark;
-}
-
-.app-block--background-img {
-  background-position: 0 -63px;
-}
-
-// .container-content--padding {
-//   padding-top: 0;
-//   padding-top: 27px;
-// }
-
-// .app-block__image--top {
-//   top: 112px;
-// }
