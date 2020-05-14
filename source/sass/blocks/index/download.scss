@@ -9,6 +9,16 @@
 .container-content-download {
   padding-top: 44px;
   padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .download__button {
