@@ -56,9 +56,11 @@
   border-collapse: collapse;
   text-align: center;
   width: 840px;
+  transform: translateX(-259px);
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    transform: translateX(0);
   }
 
   @media (min-width: $desktop-width) {
@@ -171,6 +173,7 @@
   vertical-align: top;
   width: 31px;
   height: 21px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -210,6 +213,30 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.buy-block__item--pink-filter {
+  margin-right: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.buy-block__item--smile {
+  margin-right: 126px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.buy-block__item--comment {
+  margin-right: 97px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
