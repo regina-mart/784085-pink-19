@@ -114,16 +114,16 @@
   }
 }
 
-.page-footer__logo-image--color:hover {
-    fill: #d22856;
-}
-
 .page-footer__logo-image-desktop {
   display: none;
 
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.page-footer__logo-image--color {
+  display: none;
 }
 
 svg:hover .page-footer__logo-image--color {
