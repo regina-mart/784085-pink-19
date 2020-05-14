@@ -24,10 +24,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 69px;
+    width: 660px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 66px;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
