@@ -188,14 +188,13 @@ svg:focus .page-footer__logo-image--color {
   vertical-align: top;
   width: 46px;
   height: 46px;
-}
-
-.page-footer__social-link:hover {
-  border: 3px solid #283645;
-}
-
-.page-footer__social-link:focus {
-  opacity: 0.5;
+  &:hover,
+  &:focus {
+   border: 3px solid #283645;
+ }
+  &:active{
+   opacity: 0.3;
+ }
 }
 
 .page-footer__social-link--twitter::after {
@@ -291,10 +290,12 @@ svg:focus .page-footer__logo-image--color {
   }
 }
 
-.page-footer__developed-icon--color:hover {
+.page-footer__developed-icon--color {
+  &:hover,
+  &:focus {
     fill: #283645;
-}
-
-.page-footer__developed-icon--color:focus {
-    fill: #bec2c7;
+ }
+  &:active {
+   fill: #bec2c7;
+ }
 }

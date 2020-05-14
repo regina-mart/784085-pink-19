@@ -102,3 +102,15 @@
     margin-top: 25px;
   }
 }
+
+.contacts-block__mail {
+  &:hover,
+  &:focus {
+  color: $color-dark;
+   text-decoration: underline;
+ }
+  &:active{
+   color: $color-dark;
+   opacity: 0.3;
+ }
+}

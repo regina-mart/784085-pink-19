@@ -48,6 +48,12 @@
   margin-top: 8px;
   margin-bottom: 20px;
   width: 256px;
+  &:hover {
+    border: 2px solid $color-dark;
+ }
+  &:focus{
+    border: 2px solid $color-pink;
+ }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
@@ -258,6 +264,7 @@
 .form__achievements-label--6 {
   @media (min-width: $desktop-width) {
     order: 6;
+    margin-left: 6px;
   }
 }
 .label-text {
@@ -508,7 +515,6 @@
   margin-right: 28px;
   vertical-align: middle;
 
-
   @media (min-width: $tablet-width) {
     margin-left: 59px;
     margin-right: 19px;
@@ -540,6 +546,18 @@
     top: 13px;
     left: 87px;
   }
+}
+
+.form__app-label:hover::before,
+.form__app-label:focus::before,
+.form__achievements-label:hover::before,
+.form__achievements-label:focus::before {
+  border: 2px solid $color-dark;
+}
+
+.form__app-label:active::before,
+.form__achievements-label:active::before {
+  border: 2px solid $color-pink;
 }
 
 .form__textarea {
@@ -590,6 +608,17 @@
   border: none;
   border-radius: 3px;
   margin-top: 48px;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+ }
+  &:active {
+   color: #7abc98;
+ }
+  &:disabled {
+   background-color: #000000;
+   opacity: 0.1;
+ }
 
   @media (min-width: $tablet-width) {
     margin-top: 67px;

@@ -33,6 +33,14 @@
   padding-bottom: 13px;
   padding-left: 35px;
   padding-right: 35px;
+  &:hover,
+  &:focus {
+   color: $color-pink;
+   background-color: #ffffff;
+ }
+  &:active{
+   color: #f2cdd4;
+ }
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;
