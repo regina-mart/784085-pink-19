@@ -39,7 +39,6 @@
 .contacts-block__item {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -47,18 +46,32 @@
 }
 
 .contacts-block__item--1 {
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 1;
   }
 }
 
 .contacts-block__item--2 {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 3;
   }
 }
 
 .contacts-block__item--3 {
+  margin-top: 27px;
+
   @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
@@ -76,15 +89,29 @@
 
 .contacts-block__text {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   color: $color-pink;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 25px;
+  }
+}
+
+.contacts-block__mail {
+  &:hover,
+  &:focus {
+    color: $color-dark;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $color-dark;
+    opacity: 0.3;
   }
 }

@@ -1,5 +1,30 @@
 .buy-block {
   background-color: $color-grey;
+  position: relative;
+}
+
+.buy-block::before {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 322px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 95px;
+  }
 }
 
 .buy-block--container {
@@ -14,7 +39,7 @@
 }
 
 .buy-block__slider {
-  padding-top: 66px;
+  padding-top: 90px;
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
+    padding-top: 146px;
     padding-bottom: 95px;
   }
 }
@@ -31,6 +56,17 @@
 .buy-block__list {
   border-collapse: collapse;
   text-align: center;
+  width: 840px;
+  transform: translateX(-259px);
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    transform: translateX(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .buy-block__item {
@@ -45,6 +81,7 @@
 
   @media (min-width: $tablet-width) {
     display: table-cell;
+    width: 138px;
   }
 }
 
@@ -54,6 +91,14 @@
 
 .buy-block__item--background {
   background-color: $color-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
 }
 
 .buy-block__item--text {
@@ -102,7 +147,6 @@
   color: $color-dark;
   text-align: left;
   padding-left: 22px;
-  padding-right: 124px;
   padding-top: 14px;
   padding-bottom: 17px;
   background-color: #ffffff;
@@ -112,15 +156,88 @@
     padding-top: 6px;
     padding-bottom: 10px;
     padding-left: 16px;
-    padding-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     padding-left: 21px;
-    padding-right: 65px;
     padding-top: 14px;
     padding-bottom: 16px;
+  }
+}
+
+.buy-block__item--yes::after {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 31px;
+  height: 21px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 2px;
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 84px;
+  }
+}
+
+.buy-block__item--no::after {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 2px;
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 84px;
+  }
+}
+
+.buy-block__item--text-none {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.buy-block__item--pink-filter {
+  margin-right: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.buy-block__item--smile {
+  margin-right: 126px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.buy-block__item--comment {
+  margin-right: 97px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 

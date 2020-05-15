@@ -2,7 +2,8 @@
 @import "global/variables.scss";
 @import "global/general.scss";
 @import "global/main-navigation.scss";
-@import "blocks/index/site-list.scss";
+@import "global/footer.scss";
+@import "global/site-list.scss";
 @import "blocks/index/app-block.scss";
 @import "blocks/index/download.scss";
 @import "blocks/index/advantages-block.scss";
@@ -10,9 +11,9 @@
 @import "blocks/index/reviews-block.scss";
 @import "blocks/index/buy-block.scss";
 @import "blocks/index/contacts-block.scss";
-@import "blocks/index/footer-index.scss";
 @import "blocks/photo/user-photos.scss";
 @import "blocks/photo/publication-block.scss";
 @import "blocks/form/contest-block.scss";
 @import "blocks/form/form.scss";
 @import "blocks/form/modal-windows.scss";
+@import "global/js-changes.scss"

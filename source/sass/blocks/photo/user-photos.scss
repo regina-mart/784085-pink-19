@@ -6,6 +6,40 @@
   background-size: 100%;
   display: block;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-color: $color-dark;
+    background-repeat: no-repeat;
+    content: "";
+    background-size: auto;
+    background-position: top;
+    display: block;
+    text-align: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: $color-dark;
+    background-repeat: no-repeat;
+    content: "";
+    background-size: auto;
+    background-position: top;
+    display: block;
+    text-align: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 }
 
 .user-photos__caption {
@@ -37,18 +71,43 @@
   text-align: center;
   margin: 0;
   margin-top: 45px;
-  margin-bottom: 38px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     margin: 0;
     margin-top: 93px;
-    margin-bottom: 64px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
 .user-photo--chief {
   position: relative;
+}
+
+.user-photo--secondary {
+  margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.user-photo__image--chief {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 509px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .user-photo__label-text {
@@ -66,23 +125,16 @@
   position: absolute;
   top: 0;
   right: 19px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    top: 56px;
+    top: 58px;
     right: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 66px;
+    top: 53px;
     right: 129px;
-  }
-}
-
-.user-photo__image--chief { //временно
-  padding-bottom: 127px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 504px;
   }
 }
 
@@ -94,10 +146,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
-    min-height: 154px;
+    padding-left: 27px;
+    padding-right: 32px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    min-height: 109px;
   }
 }
 
@@ -106,7 +162,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 51px;
+    margin-top: 32px;
+    align-items: stretch;
   }
 }
 
@@ -118,6 +175,10 @@
   }
 }
 
+.user-photo__image {
+  vertical-align: top;
+}
+
 .user-photo__content {
   display: flex;
   flex-direction: column;
@@ -127,6 +188,10 @@
 .user-photo__user {
   display: flex;
   margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .user-photo__name,
@@ -146,16 +211,22 @@
 }
 
 .user-photo__like {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: $color-pink;
+  display: flex;
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    justify-content: space-between;
+    margin-top: 0;
   }
 }
 
-.user-photo__like--heart::before {
+.user-photo__like--heart {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.user-photo__like--heart::after {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   content: "";
@@ -164,26 +235,23 @@
   width: 13px;
   height: 12px;
   margin-top: 5px;
-  margin-right: 19px;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    // margin-left: 5px;
   }
 }
 
-.user-photo__like--heart::after {
-  display: none;
+.user-photo__like--text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-pink;
+  margin: 0;
+  margin-left: 19px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 13px;
-    height: 12px;
-    margin-top: 5px;
-    margin-left: 17px;
+    order: 1;
+    margin-left: 0;
+    margin-right: 16px;
   }
 }
 
@@ -192,18 +260,26 @@
     display: flex;
     flex-direction: row;
     padding-left: 28px;
+    padding-right: 30px;
+    padding-top: 7px;
+    padding-bottom: 24px;
     min-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
   }
 }
 
 .user-photo__user--chief {
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-top: 25px;
+    // margin: 0;
+    // margin-top: 16px;
   }
 }
 
@@ -214,8 +290,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-bottom: 25px;
+    // margin: 0;
+    // margin-bottom: 25px;
   }
 }
 
@@ -227,7 +303,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 26px;
-    margin-left: 622px;
+    // margin-top: 26px;
+    // margin-left: 622px;
   }
 }

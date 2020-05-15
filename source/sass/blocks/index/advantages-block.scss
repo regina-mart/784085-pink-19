@@ -39,22 +39,50 @@
     font-size: 50px;
     line-height: 60px;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 }
 
 .advantages-block__list {
   background-color: $color-grey;
+  position: relative;
+}
+
+.advantages-block__list::before {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 322px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 52px;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 95px;
+    z-index: 0;
+  }
 }
 
 .advantages-block__list--container {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -65,17 +93,35 @@
 
   @media (min-width: $tablet-width) {
     width: 330px;
-    margin-right: 0;
+    margin-left: 42px;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 76px;
     order: 2;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding-top: 64px;
+    padding-top: 56px;
+    margin: 0;
+  }
+}
+
+.advantages-block__item--1 {
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
+  }
+}
+
+.advantages-block__item--2 {
+  @media (min-width: $desktop-width) {
+    margin-left: 98px;
+  }
+}
+
+.advantages-block__item--3 {
+  @media (min-width: $desktop-width) {
+    margin-left: 102px;
   }
 }
 
@@ -116,10 +162,13 @@
 .advantages-block__image-list {
   @media (min-width: $tablet-width) {
     order: 1;
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -134,5 +183,9 @@
 .advantages-block__image-3 {
   margin: 0 auto;
   display: block;
-  padding-top: 7px;
+  padding-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

@@ -1,3 +1,8 @@
+.page-header {
+  position: relative;
+  z-index: 5;
+}
+
 .main-navigation__header {
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -20,8 +25,16 @@
   justify-content: space-between;
 }
 
+.main-navigation__logo-link {
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
 .main-navigation__toggle {
-  width: 50px;
+  width: 56px;
   height: 24px;
   margin-top: 20px;
   background-color: transparent;
