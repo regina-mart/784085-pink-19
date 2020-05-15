@@ -86,7 +86,6 @@
 }
 
 .page-footer--form {
-  display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,8 +176,8 @@ svg:focus .page-footer__logo-image--color {
 }
 
 .page-footer__social-item {
-    padding-right: 10px;
-    position: relative;
+  padding-right: 10px;
+  position: relative;
 }
 
 .page-footer__social-link {
@@ -188,61 +187,63 @@ svg:focus .page-footer__logo-image--color {
   vertical-align: top;
   width: 46px;
   height: 46px;
+
   &:hover,
   &:focus {
-   border: 3px solid #283645;
- }
-  &:active{
-   opacity: 0.3;
- }
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social-link--twitter::after {
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 18px;
-    height: 15px;
-    position: absolute;
-    top: 21px;
-    left: 16px;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  top: 21px;
+  left: 16px;
 }
 
 .page-footer__social-link--facebook::after {
-    background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 9px;
-    height: 20px;
-    position: absolute;
-    top: 16px;
-    left: 21px;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 9px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  left: 21px;
 }
 
 .page-footer__social-link--youtube::after {
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 15px;
-    height: 14px;
-    position: absolute;
-    top: 19px;
-    left: 21px;
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 14px;
+  position: absolute;
+  top: 19px;
+  left: 21px;
 }
 
 .page-footer__developed {
-    display: flex;
-    margin-top: 25px;
+  display: flex;
+  margin-top: 25px;
 
-    @media (min-width: $tablet-width) {
-      margin-top: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .page-footer__developed--photo {
@@ -294,8 +295,9 @@ svg:focus .page-footer__logo-image--color {
   &:hover,
   &:focus {
     fill: #283645;
- }
+  }
+
   &:active {
-   fill: #bec2c7;
- }
+    fill: #bec2c7;
+  }
 }

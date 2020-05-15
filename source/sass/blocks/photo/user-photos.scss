@@ -220,11 +220,12 @@
   }
 }
 
-.user-photo__like--heart{
+.user-photo__like--heart {
   @media (min-width: $tablet-width) {
     order: 2;
   }
 }
+
 .user-photo__like--heart::after {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
@@ -234,10 +235,6 @@
   width: 13px;
   height: 12px;
   margin-top: 5px;
-
-  @media (min-width: $tablet-width) {
-
-  }
 
   @media (min-width: $desktop-width) {
     // margin-left: 5px;

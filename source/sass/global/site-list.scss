@@ -40,34 +40,33 @@
 
 .site-list__link {
   color: #ffffff;
-}
 
-
-.site-list__link {
-  color: #ffffff;
   &:hover,
   &:focus {
-   color: $color-pink;
- }
-  &:active{
-   opacity: 0.3;
- }
+    color: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     &:active {
-     color: #ffffff;
-     opacity: 0.3;
+      color: #ffffff;
+      opacity: 0.3;
     }
   }
+
   &--active {
     &::after {
-    @media (min-width: $desktop-width) {
-      display: block;
-      background-color: #ffffff;
-      content: "";
-      width: 100%;
-      height: 2px;
-      margin-top: 9px;
+      @media (min-width: $desktop-width) {
+        display: block;
+        background-color: #ffffff;
+        content: "";
+        width: 100%;
+        height: 2px;
+        margin-top: 9px;
+      }
     }
-   }
   }
- }
+}

@@ -25,13 +25,11 @@
     display: flex;
     margin-top: 69px;
     width: 660px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 66px;
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -228,9 +226,10 @@
   height: 10px;
   border-radius: 50px;
   border: 2px solid $color-pink;
+
   &:active {
-   background-color: $color-pink;
- }
+    background-color: $color-pink;
+  }
 }
 
 .scale__range-circle--1 {
@@ -337,25 +336,28 @@
   &:focus {
     background-color: $color-pink;
     color: #ffffff;
- }
+  }
+
   &:active {
-   color: #e07e94;
- }
+    color: #e07e94;
+  }
 }
 
 .publication-button--cancel {
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   margin-top: 13px;
+
   &:hover,
   &:focus {
     border: 3px solid #b5b9be;
     color: #c2c4c7;
- }
+  }
+
   &:active {
-   background-color: #b5b9be;
-   color: #cdcfd3;
- }
+    background-color: #b5b9be;
+    color: #cdcfd3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
