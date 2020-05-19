@@ -3,7 +3,7 @@
   display: none;
   background-color: #ffffff;
   margin: auto;
-  // box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -62,23 +62,18 @@
 }
 
 .modal-error {
-  // display: none;
-  position: absolute;
-  top: 790px;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    top: 287px;
     width: 460px;
-    margin: 0 auto;
-    margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 259px;
     width: 780px;
-    margin-left: 210px;
   }
 }
 
@@ -126,23 +121,18 @@
 }
 
 .modal-application-sent {
-  // display: none;
-  position: absolute;
-  top: 1270px;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    top: 761px;
     width: 460px;
-    margin: 0 auto;
-    margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 716px;
     width: 780px;
-    margin-left: 210px;
   }
 }
 
