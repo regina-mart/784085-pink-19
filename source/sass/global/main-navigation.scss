@@ -34,6 +34,43 @@
   }
 }
 
+.main-navigation__logo-image {
+  margin-left: -72px;
+  margin-top: -16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.logo-img--glasses-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo-img--glasses-desktop,
+.logo-img--stars {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.letter,
+.logo-img--glasses-tablet,
+.logo-img--glasses-desktop {
+  fill: #ffffff;
+}
+
 .main-navigation__toggle--open {
   width: 56px;
   height: 23px;

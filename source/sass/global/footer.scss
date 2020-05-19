@@ -105,7 +105,7 @@
   }
 }
 
-.page-footer__logo-image {
+.logo-img--glasses-tablet-footer {
   display: block;
 
   @media (min-width: $desktop-width) {
@@ -113,7 +113,8 @@
   }
 }
 
-.page-footer__logo-image-desktop {
+.logo-img--glasses-desktop-footer,
+.logo-img--stars-footer {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -121,16 +122,17 @@
   }
 }
 
-.page-footer__logo-image--color {
-  display: none;
+.letter-footer {
+  fill: #000000;
 }
 
-svg:hover .page-footer__logo-image--color {
-  fill: #d22856;
+.logo-img--glasses-tablet-footer,
+.logo-img--glasses-desktop-footer {
+  fill: $color-pink;
 }
 
-svg:focus .page-footer__logo-image--color {
-  opacity: 0.5;
+.stars-foter {
+  fill: #000000;
 }
 
 .page-footer__social-list {
@@ -138,7 +140,7 @@ svg:focus .page-footer__logo-image--color {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 39px;
+  margin-top: 32px;
   margin-left: 6px;
 
   @media (min-width: $tablet-width) {
@@ -267,7 +269,7 @@ svg:focus .page-footer__logo-image--color {
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-top: 16px;
+    margin-top: 23px; // фото
   }
 
   @media (min-width: $desktop-width) {
@@ -283,7 +285,7 @@ svg:focus .page-footer__logo-image--color {
   display: block;
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
+    margin-top: 20px;  // фото
   }
 
   @media (min-width: $desktop-width) {
