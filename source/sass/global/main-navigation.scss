@@ -34,7 +34,23 @@
   }
 }
 
-.main-navigation__toggle {
+.main-navigation__toggle--open {
+  width: 56px;
+  height: 23px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__toggle--close {
   width: 29px;
   height: 23px;
   margin-top: 20px;
@@ -50,14 +66,20 @@
   }
 }
 
-.main-navigation__toggle::before {
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  vertical-align: top;
-  width: 24px;
-  height: 23px;
+.main-navigation__toggle--icon-js {
+  display: none;
+
+  &:hover {
+    fill: $color-pink;
+  }
+}
+
+.icon-menu-cross {
+  fill: #ffffff;
+}
+
+svg:hover .icon-menu-cross {
+  fill: $color-pink;
 }
 
 .main-navigation__wrapper {

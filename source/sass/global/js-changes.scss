@@ -25,15 +25,12 @@
 //     display: none;
 //   }
 // }
-//
-// .main-navigation__toggle--js::before {
-//   background-image: url("../img/icon-menu-burger.svg");
-//   background-repeat: no-repeat;
-//   content: "";
-//   display: inline-block;
-//   vertical-align: top;
-//   width: 50px;
-//   height: 24px;
+// .main-navigation__toggle--icon {
+//     display: none;
+// }
+
+// .main-navigation__toggle--icon-js {
+//   display: block;
 // }
 //
 // .app-block--js {
