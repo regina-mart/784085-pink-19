@@ -41,6 +41,7 @@
     display: block;
     width: 238px;
     height: 276px;
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/icon-timer-tablet@2x.png");
