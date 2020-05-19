@@ -489,15 +489,15 @@
 .form__app-list {
   padding-top: 36px;
   padding-bottom: 8px;
-  padding-left: 72px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+    padding-left: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 433px;
     padding-top: 40px;
+    padding-left: 72px;
   }
 }
 
@@ -540,20 +540,10 @@
   background-color: $color-pink;
   border-radius: 50%;
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 13px;
+  left: 13px;
   display: inline-block;
   content: "";
-
-  @media (min-width: $tablet-width) {
-    top: 14px;
-    left: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 13px;
-    left: 13px;
-  }
 }
 
 .form__app-label:hover::before,

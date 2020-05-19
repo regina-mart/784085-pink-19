@@ -54,9 +54,33 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    position: relative;
   }
 }
 
+.review-arrow-left {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: #b5b9be;
+    position: absolute;
+    top: 79px;
+    left: 0;
+  }
+}
+
+.review-arrow-right {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: #b5b9be;
+    position: absolute;
+    top: 79px;
+    right: 0;
+  }
+}
 .reviews-block__slider-item {
   text-align: center;
 
@@ -69,57 +93,6 @@
     position: relative;
   }
 }
-
-// .reviews-block__slider-item::before {
-//   display: none;
-//
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//     background-image: url("../img/icon-review-arrow-left.svg");
-//     background-repeat: no-repeat;
-//     content: "";
-//     vertical-align: top;
-//     width: 22px;
-//     height: 41px;
-//     position: absolute;
-//     top: 79px;
-//     left: 0;
-//
-//     &:hover,
-//     &:focus {
-//       background-color: #7e868f;
-//     }
-//
-//     &:active {
-//       background-color: #e9ebec;
-//     }
-//   }
-// }
-//
-// .reviews-block__slider-item::after {
-//   display: none;
-//
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//     background-image: url("../img/icon-review-arrow-right.svg");
-//     background-repeat: no-repeat;
-//     content: "";
-//     vertical-align: top;
-//     width: 22px;
-//     height: 41px;
-//     position: absolute;
-//     top: 79px;
-//     right: 0;
-//   }
-// }
-//
-// .reviews-block__slider-item:focus::before {
-//   display: none;
-//
-//   @media (min-width: $desktop-width) {
-//     outline: 2px solid #68a2f9;
-//   }
-// }
 
 .reviews-block__user {
   @media (min-width: $tablet-width) {

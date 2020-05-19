@@ -209,7 +209,7 @@
   width: 18px;
   height: 15px;
   position: absolute;
-  top: 21px;
+  top: 19px;
   left: 16px;
 }
 
@@ -283,6 +283,7 @@
   padding-left: 15px;
   margin-top: 14px;
   display: block;
+  fill: $color-pink;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;  // фото
