@@ -90,6 +90,10 @@
   }
 }
 
+.form__app-input:focus + label .label-text {
+  outline: 2px solid #000000;
+}
+
 .form__app--container {
   @media (min-width: $desktop-width) {
     width: 431px;
@@ -190,6 +194,10 @@
 .form__achievements-label {
   margin-bottom: 43px;
   position: relative;
+}
+
+.form__achievements-input:focus + label .label-text {
+  outline: 2px solid #000000;
 }
 
 .form__achievements-label::before {
@@ -481,13 +489,14 @@
 .form__app-list {
   padding-top: 36px;
   padding-bottom: 8px;
+  padding-left: 72px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 433px;
+    // width: 433px;
     padding-top: 40px;
   }
 }
@@ -517,12 +526,10 @@
   vertical-align: middle;
 
   @media (min-width: $tablet-width) {
-    margin-left: 59px;
     margin-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 74px;
     margin-right: 19px;
   }
 }
@@ -540,12 +547,12 @@
 
   @media (min-width: $tablet-width) {
     top: 14px;
-    left: 72px;
+    left: 15px;
   }
 
   @media (min-width: $desktop-width) {
     top: 13px;
-    left: 87px;
+    left: 13px;
   }
 }
 
