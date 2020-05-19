@@ -12,7 +12,7 @@
   width: 320px;
   height: 123px;
   position: absolute;
-  top: 43px;
+  top: 42px;
   left: 0;
   z-index: 1;
 
@@ -33,7 +33,7 @@
   position: relative;
   z-index: 0;
   width: 320px;
-  height: 200px;
+  height: 197px;
   margin-top: 43px;
 
   @media (min-width: $tablet-width) {
@@ -267,7 +267,7 @@ svg:focus .page-footer__logo-image--color {
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-top: 26px;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -283,7 +283,7 @@ svg:focus .page-footer__logo-image--color {
   display: block;
 
   @media (min-width: $tablet-width) {
-    margin-top: 23px;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
