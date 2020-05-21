@@ -67,6 +67,15 @@
     position: absolute;
     top: 79px;
     left: 0;
+
+    &:hover,
+    &:focus {
+      fill: #868e97;
+    }
+
+    &:active {
+      fill: #edeef0;
+    }
   }
 }
 
@@ -79,8 +88,18 @@
     position: absolute;
     top: 79px;
     right: 0;
+
+    &:hover,
+    &:focus {
+      fill: #868e97;
+    }
+
+    &:active {
+      fill: #edeef0;
+    }
   }
 }
+
 .reviews-block__slider-item {
   text-align: center;
 
@@ -194,7 +213,10 @@
   background-color: #ffffff;
   border-radius: 50%;
   border: 3px solid #283645;
-  // outline: 2px solid #f00;
+
+  &:focus {
+    outline: 2px solid #f00;
+  }
 
   @media (min-width: $tablet-width) {
     top: -2px;
@@ -206,12 +228,6 @@
     left: -3px;
   }
 }
-
-// .slide-1:checked ~ .slider .slide-label:nth-child(1),
-// .slide-2:checked ~ .slider .slide-label:nth-child(2),
-// .slide-3:checked ~ .slider .slide-label:nth-child(3) {
-//   outline: 10px solid #f00;
-// }
 
 .slider__item-1 {
   position: absolute;

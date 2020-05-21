@@ -95,9 +95,14 @@
 }
 
 .publication-block__tool-crop {
-  fill: #b5b9be;
+  fill: $color-pink;
   width: 48px;
   height: 48px;
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
 
   @media (min-width: $tablet-width) {
     fill: $color-pink;
@@ -117,6 +122,11 @@
   height: 43px;
   margin-top: 2px;
   margin-left: 28px;
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
 
   @media (min-width: $tablet-width) {
     fill: $color-pink;
@@ -139,6 +149,11 @@
   height: 32px;
   margin-left: 37px;
   margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
 
   @media (min-width: $tablet-width) {
     fill: $color-pink;

@@ -51,7 +51,6 @@
   width: 320px;
   height: 197px;
   z-index: 1;
-  display: none;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -318,22 +317,24 @@
   display: block;
   fill: $color-pink;
 
+  &:hover {
+    fill: #000000;
+  }
+
+  &:focus {
+    fill: #000000;
+    outline: 2px solid #f00;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 20px;  // фото
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 13px;
-  }
-}
-
-.page-footer__developed-icon--color {
-  &:hover,
-  &:focus {
-    fill: #283645;
-  }
-
-  &:active {
-    fill: #bec2c7;
   }
 }
