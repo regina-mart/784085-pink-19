@@ -58,6 +58,19 @@
   }
 }
 
+.reviews-block__arrow-1 {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 22px;
+    height: 41px;
+ }
+}
+
 .reviews-block__arrow-left {
   display: none;
 
@@ -65,17 +78,23 @@
     display: block;
     fill: #b5b9be;
     position: absolute;
-    top: 79px;
+    top: 0;
     left: 0;
 
-    &:hover,
-    &:focus {
-      fill: #868e97;
-    }
+    // &:hover,
+    // &:focus {
+    //   fill: #868e97;
+    // }
+    //
+    // &:active {
+    //   fill: #edeef0;
+    // }
+  }
+}
 
-    &:active {
-      fill: #edeef0;
-    }
+.reviews-block__arrow-1:hover .icon-review-arrow-left {
+  @media (min-width: $desktop-width) {
+    fill: #868e97;
   }
 }
 
