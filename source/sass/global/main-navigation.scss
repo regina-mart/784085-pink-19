@@ -71,32 +71,30 @@
   fill: #ffffff;
 }
 
-.main-navigation__toggle-open {
+.main-navigation__toggle {
   width: 56px;
-  height: 23px;
-  margin-top: 20px;
+  height: 29px;
+  margin-top: 19px;
+  position: relative;
   background-color: transparent;
   border: none;
+}
 
-  @media (min-width: $tablet-width) {
-    margin-top: 43px;
-  }
+.main-navigation__toggle-icon-open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.main-navigation__toggle-close {
-  width: 29px;
-  height: 23px;
-  margin-top: 20px;
-  background-color: transparent;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 43px;
-  }
+.main-navigation__toggle-icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
 
   @media (min-width: $desktop-width) {
     display: none;
