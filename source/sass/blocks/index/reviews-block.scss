@@ -11,7 +11,7 @@
   }
 }
 
-.reviews-block--container {
+.reviews-block__container {
   position: relative;
   min-height: 304px;
   padding-bottom: 47px;
@@ -27,7 +27,7 @@
   }
 }
 
-.reviews-block--quotes::before {
+.reviews-block__quotes::before {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -58,7 +58,7 @@
   }
 }
 
-.review-arrow-left {
+.reviews-block__arrow-left {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
   }
 }
 
-.review-arrow-right {
+.reviews-block__arrow-right {
   display: none;
 
   @media (min-width: $desktop-width) {

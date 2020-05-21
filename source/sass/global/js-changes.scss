@@ -28,9 +28,13 @@
 // .main-navigation__toggle--icon {
 //     display: none;
 // }
-
-// .main-navigation__toggle--icon-js {
+//
+// .main-navigation__toggle-icon--js {
 //   display: block;
+//
+//   &:hover {
+//     fill: $color-pink;
+//   }
 // }
 //
 // .app-block--js {

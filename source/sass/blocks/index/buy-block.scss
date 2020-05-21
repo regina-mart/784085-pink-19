@@ -27,7 +27,7 @@
   }
 }
 
-.buy-block--container {
+.buy-block__container {
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
@@ -101,7 +101,7 @@
   }
 }
 
-.buy-block__item--text {
+.buy-block__text {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -121,7 +121,7 @@
   }
 }
 
-.buy-block__item--price {
+.buy-block__price {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -209,7 +209,7 @@
   }
 }
 
-.buy-block__item--text-none {
+.buy-block__text-none {
   display: inline-block;
 
   @media (min-width: $tablet-width) {
@@ -217,7 +217,7 @@
   }
 }
 
-.buy-block__item--pink-filter {
+.buy-block__pink-filter {
   margin-right: 76px;
 
   @media (min-width: $tablet-width) {
@@ -225,7 +225,7 @@
   }
 }
 
-.buy-block__item--smile {
+.buy-block__smile {
   margin-right: 126px;
 
   @media (min-width: $tablet-width) {
@@ -233,7 +233,7 @@
   }
 }
 
-.buy-block__item--comment {
+.buy-block__comment {
   margin-right: 97px;
 
   @media (min-width: $tablet-width) {
