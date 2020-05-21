@@ -71,6 +71,7 @@
   fill: #ffffff;
 }
 
+
 .main-navigation__toggle {
   width: 56px;
   height: 29px;
@@ -101,11 +102,17 @@
   }
 }
 
-.main-navigation__toggle-close svg {
+.main-navigation__toggle-icon-open,
+.main-navigation__toggle-icon-close  {
   fill: #ffffff;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
