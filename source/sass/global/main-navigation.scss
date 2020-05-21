@@ -71,6 +71,29 @@
   fill: #ffffff;
 }
 
+.main-navigation__logo-link:hover .letter,
+.main-navigation__logo-link:hover .glasses-tablet {
+  @media (min-width: $tablet-width) {
+    fill: $color-pink;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+  }
+}
+
+.main-navigation__logo-link:active .letter,
+.main-navigation__logo-link:active .glasses-tablet {
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
 
 .main-navigation__toggle {
   width: 56px;

@@ -166,6 +166,37 @@
   fill: #000000;
 }
 
+.page-footer__logo-image:hover .letter-footer {
+  fill: $color-pink;
+
+  @media (min-width: $tablet-width) {
+    fill: $color-pink;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #000000;
+  }
+}
+
+.page-footer__logo-image:active .letter-footer {
+  @media (min-width: $tablet-width) {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #000000;
+    opacity: 1;
+  }
+}
+
+.logo-footer-img__glasses-tablet:active {
+  @media (min-width: $tablet-width) {
+    fill: $color-pink;
+    opacity: 0.3;
+  }
+}
+
 .page-footer__social-list {
   display: flex;
   flex-wrap: wrap;
