@@ -221,13 +221,13 @@
   }
 }
 
-.user-photo__like--heart {
+.user-photo__like-heart {
   @media (min-width: $tablet-width) {
     order: 2;
   }
 }
 
-.user-photo__like--heart::after {
+.user-photo__like-heart::after {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   content: "";
@@ -242,7 +242,7 @@
   }
 }
 
-.user-photo__like--text {
+.user-photo__like-text {
   font-size: 12px;
   text-transform: uppercase;
   color: $color-pink;
