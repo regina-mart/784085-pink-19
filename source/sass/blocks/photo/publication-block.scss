@@ -47,7 +47,7 @@
   }
 }
 
-.publication-block--container {
+.publication-block__container {
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -94,7 +94,7 @@
   }
 }
 
-.publication-block__tool--crop {
+.publication-block__tool-crop {
   fill: #b5b9be;
   width: 48px;
   height: 48px;
@@ -111,7 +111,7 @@
   }
 }
 
-.publication-block__tool--fill {
+.publication-block__tool-fill {
   fill: #b5b9be;
   width: 48px;
   height: 43px;
@@ -133,7 +133,7 @@
   }
 }
 
-.publication-block__tool--contrast {
+.publication-block__tool-contrast {
   fill: #b5b9be;
   width: 32px;
   height: 32px;
@@ -319,7 +319,7 @@
   }
 }
 
-.publication-button {
+.publication-block__button {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -341,7 +341,7 @@
   }
 }
 
-.publication-button--post {
+.publication-block__button--post {
   &:hover,
   &:focus {
     background-color: $color-pink;
@@ -353,7 +353,7 @@
   }
 }
 
-.publication-button--cancel {
+.publication-block__button--cancel {
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   margin-top: 13px;

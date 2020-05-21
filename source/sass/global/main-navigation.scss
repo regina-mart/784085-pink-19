@@ -103,12 +103,12 @@
   }
 }
 
-.icon-menu-cross {
+.main-navigation__toggle-close svg {
   fill: #ffffff;
-}
 
-svg:hover .icon-menu-cross {
-  fill: $color-pink;
+  &:hover {
+    fill: $color-pink;
+  }
 }
 
 .main-navigation__wrapper {
