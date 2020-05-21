@@ -94,7 +94,7 @@
   outline: 2px solid #000000;
 }
 
-.form__app--container {
+.form__app-container {
   @media (min-width: $desktop-width) {
     width: 431px;
   }
@@ -399,8 +399,8 @@
   }
 }
 
-.form__phone-input--pseudo-element,
-.form__email-input--pseudo-element {
+.form__phone-pseudo-element,
+.form__email-pseudo-element {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -409,7 +409,7 @@
   }
 }
 
-.form__phone-input--pseudo-element::before {
+.form__phone-pseudo-element::before {
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -429,7 +429,7 @@
   }
 }
 
-.form__phone-input--pseudo-element::after {
+.form__phone-pseudo-element::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -448,7 +448,7 @@
   }
 }
 
-.form__email-input--pseudo-element::before {
+.form__email-pseudo-element::before {
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
@@ -468,7 +468,7 @@
   }
 }
 
-.form__email-input--pseudo-element::after {
+.form__email-pseudo-element::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -582,7 +582,7 @@
   }
 }
 
-.button-required-wrapper {
+.form__button-required-wrapper {
   display: flex;
   flex-direction: column;
 

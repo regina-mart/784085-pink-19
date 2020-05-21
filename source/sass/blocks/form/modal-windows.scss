@@ -47,13 +47,13 @@
   margin: auto;
 }
 
-.modal-button__background {
+.modal-application-sent__button-background {
   background-color: $color-grey;
   padding-top: 48px;
   padding-bottom: 51px;
 }
 
-.modal-button__background--desktop {
+.modal-error__button-background {
   @media (min-width: $desktop-width) {
     background-color: $color-grey;
     padding-top: 9px;
