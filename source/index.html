@@ -105,14 +105,6 @@
                 <svg class="main-navigation__toggle-icon-open" width="50" height="24"><use xlink:href="#icon-menu-burger"></use></svg>
                 <svg class="main-navigation__toggle-icon-close" width="24" height="23"><use xlink:href="#icon-menu-cross"></use></svg>
               </button>
-              <!-- <button class="main-navigation__toggle-open" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-                <svg class="main-navigation__toggle-icon--js" width="50" height="24"><use xlink:href="#icon-menu-burger"></use></svg>
-              </button>
-              <button class="main-navigation__toggle-close" type="button">
-                <span class="visually-hidden">Закрыть меню</span>
-                <svg class="main-navigation__toggle-icon" width="24" height="23"><use xlink:href="#icon-menu-cross"></use></svg>
-              </button> -->
             </div>
           </div>
           <div class="main-navigation__wrapper menu-hidden">
@@ -251,9 +243,9 @@
         <section class="reviews-block">
           <div class="container reviews-block__container">
             <div class="reviews-block__quotes"><span class="visually-hidden">Кавычки</span></div>
-            <input class="visually-hidden slide-1" type="radio" name="point" checked/>
-            <input class="visually-hidden slide-2" type="radio" name="point"/>
-            <input class="visually-hidden slide-3" type="radio" name="point"/>
+            <input class="visually-hidden slide-1" id="slide-1" type="radio" name="point" checked/>
+            <input class="visually-hidden slide-2" id="slide-2" type="radio" name="point"/>
+            <input class="visually-hidden slide-3" id="slide-3" type="radio" name="point"/>
             <div class="reviews-block__slider slider">
               <svg class="reviews-block__arrow-left" width="22" height="41"><use xlink:href="#icon-review-arrow-left"></use></svg>
               <svg class="reviews-block__arrow-right" width="22" height="41"><use xlink:href="#icon-review-arrow-right"></use></svg>
@@ -288,9 +280,9 @@
                 </p>
               </div>
               <div class="controls-catalog-slider">
-                <label class="slide-label slide-label-1"></label>
-                <label class="slide-label slide-label-2"></label>
-                <label class="slide-label slide-label-3"></label>
+                <label class="slide-label slide-label-1" for="slide-1"></label>
+                <label class="slide-label slide-label-2" for="slide-2"></label>
+                <label class="slide-label slide-label-3" for="slide-3"></label>
               </div>
             </div>
           </div>
