@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   content: "";
   background-size: 100%;
+  background-position: 0 -63px;
   display: block;
   text-align: center;
 
@@ -17,7 +18,7 @@
     background-repeat: no-repeat;
     content: "";
     background-size: auto;
-    background-position: top;
+    background-position: -270px -112px;
     display: block;
     text-align: center;
 
@@ -48,13 +49,13 @@
   font-weight: 300;
   color: #ffffff;
   margin: 0;
-  padding-top: 97px;
+  padding-top: 34px;
   padding-bottom: 84px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 179px;
+    padding-top: 67px;
     padding-bottom: 141px;
   }
 
@@ -220,13 +221,13 @@
   }
 }
 
-.user-photo__like--heart {
+.user-photo__like-heart {
   @media (min-width: $tablet-width) {
     order: 2;
   }
 }
 
-.user-photo__like--heart::after {
+.user-photo__like-heart::after {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   content: "";
@@ -241,7 +242,7 @@
   }
 }
 
-.user-photo__like--text {
+.user-photo__like-text {
   font-size: 12px;
   text-transform: uppercase;
   color: $color-pink;

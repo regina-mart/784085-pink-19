@@ -13,7 +13,7 @@
   }
 }
 
-.effect-block--flex {
+.effect-block__flex {
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -41,6 +41,7 @@
     display: block;
     width: 238px;
     height: 276px;
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/icon-timer-tablet@2x.png");

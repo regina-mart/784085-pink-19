@@ -10,11 +10,11 @@
   content: "";
   display: inline-block;
   vertical-align: top;
-  width: 322px;
+  width: 320px;
   height: 26px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -2px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -27,7 +27,7 @@
   }
 }
 
-.buy-block--container {
+.buy-block__container {
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
@@ -101,7 +101,7 @@
   }
 }
 
-.buy-block__item--text {
+.buy-block__text {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -121,7 +121,7 @@
   }
 }
 
-.buy-block__item--price {
+.buy-block__price {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -209,7 +209,7 @@
   }
 }
 
-.buy-block__item--text-none {
+.buy-block__text-none {
   display: inline-block;
 
   @media (min-width: $tablet-width) {
@@ -217,7 +217,7 @@
   }
 }
 
-.buy-block__item--pink-filter {
+.buy-block__pink-filter {
   margin-right: 76px;
 
   @media (min-width: $tablet-width) {
@@ -225,7 +225,7 @@
   }
 }
 
-.buy-block__item--smile {
+.buy-block__smile {
   margin-right: 126px;
 
   @media (min-width: $tablet-width) {
@@ -233,7 +233,7 @@
   }
 }
 
-.buy-block__item--comment {
+.buy-block__comment {
   margin-right: 97px;
 
   @media (min-width: $tablet-width) {
@@ -242,10 +242,56 @@
 }
 
 .buy-block__toggles {
-  margin-top: 20px;
-  padding-bottom: 52px;
+  margin-top: 40px;
+  padding-bottom: 32px;
+  position: relative;
+  margin-left: 132px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.slide-toggle {
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slide-toggle--active::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #283645;
+
+  @media (min-width: $tablet-width) {
+    top: -2px;
+    left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -2px;
+    left: -3px;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .main-navigation__header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-dark;
   display: flex;
   min-height: 66px;
   width: 100%;
@@ -15,12 +15,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
     min-height: 111px;
     position: relative;
   }
 }
 
-.main-navigation__header--container {
+.main-navigation__header-container {
   display: flex;
   justify-content: space-between;
 }
@@ -33,15 +34,21 @@
   }
 }
 
-.main-navigation__toggle {
-  width: 56px;
-  height: 24px;
-  margin-top: 20px;
-  background-color: transparent;
-  border: none;
+.main-navigation__logo-image {
+  margin-left: -72px;
+  margin-top: -16px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 43px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.logo-img__glasses-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,18 +56,90 @@
   }
 }
 
-.main-navigation__toggle::before {
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  vertical-align: top;
-  width: 50px;
-  height: 24px;
+.logo-img__glasses-desktop,
+.logo-img__stars {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.letter,
+.logo-img__glasses-tablet,
+.logo-img__glasses-desktop {
+  fill: #ffffff;
+}
+
+.main-navigation__logo-link:hover .letter,
+.main-navigation__logo-link:hover .glasses-tablet {
+  @media (min-width: $tablet-width) {
+    fill: $color-pink;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+  }
+}
+
+.main-navigation__logo-link:active .letter,
+.main-navigation__logo-link:active .glasses-tablet {
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
+.main-navigation__toggle {
+  width: 56px;
+  height: 29px;
+  margin-top: 19px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.main-navigation__toggle-icon-open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__toggle-icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__toggle-icon-open,
+.main-navigation__toggle-icon-close {
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-navigation__wrapper {
-  display: none;
   padding-top: 66px;
 
   @media (min-width: $tablet-width) {

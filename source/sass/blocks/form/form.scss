@@ -43,11 +43,13 @@
   border: 2px solid #e5e5e5;
   border-radius: 3px;
   padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  // padding-bottom: 18px;
+  height: 64px;
+  width: 100%;
   margin-top: 8px;
   margin-bottom: 20px;
-  width: 256px;
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid $color-dark;
@@ -90,7 +92,11 @@
   }
 }
 
-.form__app--container {
+.form__app-input:focus + label .label-text {
+  outline: 2px solid #000000;
+}
+
+.form__app-container {
   @media (min-width: $desktop-width) {
     width: 431px;
   }
@@ -190,6 +196,10 @@
 .form__achievements-label {
   margin-bottom: 43px;
   position: relative;
+}
+
+.form__achievements-input:focus + label .label-text {
+  outline: 2px solid #000000;
 }
 
 .form__achievements-label::before {
@@ -341,6 +351,7 @@
     color: $color-pink;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0 auto;
   }
 }
 
@@ -390,8 +401,8 @@
   }
 }
 
-.form__phone-input--pseudo-element,
-.form__email-input--pseudo-element {
+.form__phone-pseudo-element,
+.form__email-pseudo-element {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -400,7 +411,7 @@
   }
 }
 
-.form__phone-input--pseudo-element::before {
+.form__phone-pseudo-element::before {
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -420,7 +431,7 @@
   }
 }
 
-.form__phone-input--pseudo-element::after {
+.form__phone-pseudo-element::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -439,7 +450,7 @@
   }
 }
 
-.form__email-input--pseudo-element::before {
+.form__email-pseudo-element::before {
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
@@ -459,7 +470,7 @@
   }
 }
 
-.form__email-input--pseudo-element::after {
+.form__email-pseudo-element::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -484,11 +495,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+    padding-left: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 433px;
     padding-top: 40px;
+    padding-left: 72px;
   }
 }
 
@@ -517,12 +529,10 @@
   vertical-align: middle;
 
   @media (min-width: $tablet-width) {
-    margin-left: 59px;
     margin-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 74px;
     margin-right: 19px;
   }
 }
@@ -533,20 +543,10 @@
   background-color: $color-pink;
   border-radius: 50%;
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 13px;
+  left: 13px;
   display: inline-block;
   content: "";
-
-  @media (min-width: $tablet-width) {
-    top: 14px;
-    left: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 13px;
-    left: 87px;
-  }
 }
 
 .form__app-label:hover::before,
@@ -584,7 +584,7 @@
   }
 }
 
-.button-required-wrapper {
+.form__button-required-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -602,8 +602,8 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #2aab6d;
-  padding-left: 47px;
-  padding-right: 49px;
+  padding-left: 45px;
+  padding-right: 47px;
   padding-top: 18px;
   padding-bottom: 16px;
   border: none;
