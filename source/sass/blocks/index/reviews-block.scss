@@ -68,6 +68,8 @@
     left: 0;
     width: 22px;
     height: 41px;
+    background-color: transparent;
+    border: none;
   }
 }
 
@@ -81,20 +83,35 @@
     top: 0;
     left: 0;
 
-    // &:hover,
-    // &:focus {
-    //   fill: #868e97;
-    // }
-    //
-    // &:active {
-    //   fill: #edeef0;
-    // }
+    &:hover,
+    &:focus {
+      fill: #868e97;
+    }
+
+    &:active {
+      fill: #edeef0;
+    }
   }
 }
 
-.reviews-block__arrow-1:hover .icon-review-arrow-left {
+// .reviews-block__arrow-1:hover .icon-review-arrow-left {
+//   @media (min-width: $desktop-width) {
+//     fill: #868e97;
+//   }
+// }
+
+.reviews-block__arrow-2 {
+  display: none;
+
   @media (min-width: $desktop-width) {
-    fill: #868e97;
+    display: block;
+    position: absolute;
+    top: 79px;
+    right: 0;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    border: none;
   }
 }
 
@@ -105,7 +122,7 @@
     display: block;
     fill: #b5b9be;
     position: absolute;
-    top: 79px;
+    top: 0;
     right: 0;
 
     &:hover,

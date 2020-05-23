@@ -102,6 +102,10 @@
   position: relative;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
 }
 
 .main-navigation__toggle-icon-open {
