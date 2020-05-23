@@ -60,6 +60,7 @@
 
 .download__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 46px;
 
   @media (min-width: $tablet-width) {

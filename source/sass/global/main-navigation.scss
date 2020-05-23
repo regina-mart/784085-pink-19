@@ -6,6 +6,7 @@
 .main-navigation__header {
   background-color: $color-dark;
   display: flex;
+  flex-wrap: wrap;
   min-height: 66px;
   width: 100%;
   position: absolute;

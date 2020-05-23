@@ -1,11 +1,11 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
@@ -180,6 +180,7 @@
 .form__app-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form__achievements-list {
@@ -373,6 +374,7 @@
 .form__contacts {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     margin-top: -4px;
   }
 }
@@ -380,6 +382,7 @@
 .form__phone,
 .form__email {
   flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
 .form__phone-input,
@@ -587,6 +590,7 @@
 .form__button-required-wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

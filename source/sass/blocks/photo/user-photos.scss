@@ -188,6 +188,7 @@
 
 .user-photo__user {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 16px;
 
   @media (min-width: $tablet-width) {
@@ -213,6 +214,7 @@
 
 .user-photo__like {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 12px;
 
   @media (min-width: $tablet-width) {
@@ -259,6 +261,7 @@
 .user-photo__content-wrapper--chief {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding-left: 28px;
     padding-right: 30px;
