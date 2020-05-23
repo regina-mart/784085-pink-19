@@ -171,24 +171,16 @@
 
 .page-footer__logo-image:hover .letter-footer {
   fill: $color-pink;
-
-  @media (min-width: $desktop-width) {
-    fill: #000000;
-  }
 }
 
 .page-footer__logo-image:active .letter-footer {
   fill: #000000;
   opacity: 0.3;
-
-  @media (min-width: $desktop-width) {
-    fill: #000000;
-    opacity: 1;
-  }
 }
 
-.logo-footer-img__glasses-tablet:active {
-  fill: $color-pink;
+.page-footer__logo-image:active .logo-footer-img__glasses-tablet,
+.page-footer__logo-image:active .logo-footer-img__glasses-desktop,
+.page-footer__logo-image:active .footer-stars {
   opacity: 0.3;
 }
 

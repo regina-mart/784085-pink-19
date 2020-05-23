@@ -70,6 +70,7 @@
     height: 41px;
     background-color: transparent;
     border: none;
+    z-index: 1;
   }
 }
 
@@ -94,12 +95,6 @@
   }
 }
 
-// .reviews-block__arrow-1:hover .icon-review-arrow-left {
-//   @media (min-width: $desktop-width) {
-//     fill: #868e97;
-//   }
-// }
-
 .reviews-block__arrow-2 {
   display: none;
 
@@ -112,6 +107,7 @@
     height: 41px;
     background-color: transparent;
     border: none;
+    z-index: 1;
   }
 }
 
