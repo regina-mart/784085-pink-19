@@ -191,11 +191,13 @@
   @media (min-width: $tablet-width) {
     order: 1;
     font-size: 18px;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     margin-top: 51px;
+    width: 940px;
   }
 }
 
