@@ -94,7 +94,6 @@
   position: relative;
   background-color: transparent;
   border: none;
-  display: none;
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;
@@ -116,7 +115,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: none;
+  // display: none;
 
   @media (min-width: $desktop-width) {
     display: none;

@@ -1,104 +1,82 @@
-// .menu-hidden {
-//   display: none;
-//
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//   }
-// }
-//
-// .main-navigation__header--js {
-//   background-color: rgba(0, 0, 0, 0.3);
-// }
-//
-// .main-navigation__toggle--js {
-//   width: 56px;
-//   height: 24px;
-//   margin-top: 20px;
-//   background-color: transparent;
-//   border: none;
-//
-//   @media (min-width: $tablet-width) {
-//     margin-top: 43px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     display: none;
-//   }
-// }
-// .main-navigation__toggle--icon {
-//     display: none;
-// }
-//
-// .main-navigation__toggle-icon--js {
-//   display: block;
-//
-//   &:hover {
-//     fill: $color-pink;
-//   }
-// }
-//
-// .app-block--js {
-//   // background-position: 0 -63px;
-//
-//   @media (min-width: $tablet-width) {
-//     background-position: center;
-//   }
-// }
-//
-// .app-block__image--js {
-//   top: 175px;
-//
-//   @media (min-width: $tablet-width) {
-//     top: 184px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     top: 209px;
-//   }
-// }
-//
-// .container-content--js {
-//   padding-top: 90px;
-//
-//   @media (min-width: $tablet-width) {
-//     padding-top: 202px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     padding-top: 69px;
-//   }
-// }
-//
-// .user-photos__caption--js {
-//   padding-top: 97px;
-//
-//   @media (min-width: $tablet-width) {
-//     padding-top: 181px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     padding-top: 173px;
-//   }
-// }
-//
-// .user-photos__wrapper--js {
-//   @media (min-width: $tablet-width) {
-//     background-position: top;
-//   }
-// }
-//
-// .contest-block__caption--js {
-//   padding-top: 97px;
-//
-//   @media (min-width: $tablet-width) {
-//     padding-top: 179px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     padding-top: 172px;
-//   }
-// }
-//
-// .contest-block__content-wrapper--js {
-//   background-position: top;
-// }
+.menu-hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-navigation__header--js {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation__toggle-icon-open--js {
+
+}
+.main-navigation__toggle-icon-close--js
+
+.app-block--js {
+  // background-position: 0 -63px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
+}
+
+.app-block__image--js {
+  top: 175px;
+
+  @media (min-width: $tablet-width) {
+    top: 184px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 209px;
+  }
+}
+
+.container-content--js {
+  padding-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+.user-photos__caption--js {
+  padding-top: 97px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 181px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 173px;
+  }
+}
+
+.user-photos__wrapper--js {
+  @media (min-width: $tablet-width) {
+    background-position: top;
+  }
+}
+
+.contest-block__caption--js {
+  padding-top: 97px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 179px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 172px;
+  }
+}
+
+.contest-block__content-wrapper--js {
+  background-position: top;
+}
