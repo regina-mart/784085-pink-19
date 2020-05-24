@@ -1,11 +1,11 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
@@ -180,6 +180,7 @@
 .form__app-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form__achievements-list {
@@ -356,7 +357,7 @@
 }
 
 .form__fieldset-contacts {
-  margin-top: 34px;
+  margin-top: 30px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -373,6 +374,7 @@
 .form__contacts {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     margin-top: -4px;
   }
 }
@@ -380,6 +382,7 @@
 .form__phone,
 .form__email {
   flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
 .form__phone-input,
@@ -387,7 +390,7 @@
   @media (min-width: $tablet-width) {
     width: 439px;
     box-sizing: border-box;
-    margin-top: 33px;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -422,12 +425,12 @@
     height: 19px;
     position: absolute;
     top: 52px;
-    right: 20px;
+    left: 458px;
   }
 
   @media (min-width: $desktop-width) {
     top: 52px;
-    right: 20px;
+    left: 333px;
   }
 }
 
@@ -461,12 +464,12 @@
     height: 13px;
     position: absolute;
     top: 59px;
-    right: 20px;
+    left: 459px;
   }
 
   @media (min-width: $desktop-width) {
     top: 57px;
-    right: 20px;
+    left: 346px;
   }
 }
 
@@ -477,14 +480,14 @@
     background-color: #e5e5e5;
     width: 60px;
     height: 60px;
-    margin-top: -62px;
+    margin-top: -63px;
     margin-left: 436px;
     border: 1px solid #e5e5e5;
     border-radius: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -62px;
+    margin-top: -63px;
     margin-left: 323px;
   }
 }
@@ -562,12 +565,14 @@
 }
 
 .form__textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
   display: block;
   margin: auto;
   min-height: 202px;
   box-sizing: border-box;
   padding-top: 16px;
   width: 281px;
+  color: $color-dark;
 
   @media (min-width: $tablet-width) {
     width: 500px;
@@ -587,6 +592,7 @@
 .form__button-required-wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -676,7 +682,7 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-top: 52px;
+    margin-top: 50px;
     padding-bottom: 13px;
   }
 

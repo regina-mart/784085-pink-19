@@ -85,19 +85,21 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-top: 29px;
+    flex-wrap: wrap;
+    margin-top: 34px;
     margin-bottom: 36px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 66px;
+    margin-top: 71px;
     margin-bottom: 70px;
   }
 }
 
 .page-footer__photo {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
@@ -118,6 +120,7 @@
 
 .page-footer__form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-top: 54px;
@@ -168,24 +171,16 @@
 
 .page-footer__logo-image:hover .letter-footer {
   fill: $color-pink;
-
-  @media (min-width: $desktop-width) {
-    fill: #000000;
-  }
 }
 
 .page-footer__logo-image:active .letter-footer {
   fill: #000000;
   opacity: 0.3;
-
-  @media (min-width: $desktop-width) {
-    fill: #000000;
-    opacity: 1;
-  }
 }
 
-.logo-footer-img__glasses-tablet:active {
-  fill: $color-pink;
+.page-footer__logo-image:active .logo-footer-img__glasses-tablet,
+.page-footer__logo-image:active .logo-footer-img__glasses-desktop,
+.page-footer__logo-image:active .footer-stars {
   opacity: 0.3;
 }
 
@@ -200,7 +195,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 2px;
-    margin-left: 0;
+    margin-left: -7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -296,6 +291,7 @@
 
 .page-footer__developed {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
@@ -324,13 +320,19 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-top: 23px; // фото
+    margin-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
     margin-top: 19px;
+  }
+}
+
+.page-footer__developed-text--photo {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
   }
 }
 
@@ -354,10 +356,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;  // фото
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 13px;
+  }
+}
+
+.page-footer__developed-icon--photo {
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
   }
 }

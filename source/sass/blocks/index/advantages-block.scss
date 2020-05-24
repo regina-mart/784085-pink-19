@@ -189,5 +189,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    width: 269px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
   }
 }
