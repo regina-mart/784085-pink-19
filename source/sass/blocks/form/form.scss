@@ -44,12 +44,12 @@
   border-radius: 3px;
   padding-left: 20px;
   padding-top: 13px;
-  // padding-bottom: 18px;
   height: 64px;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  outline: none;
 
   &:hover {
     border: 2px solid $color-dark;
@@ -242,6 +242,10 @@
     top: 10px;
     left: 70px;
   }
+}
+
+.form__achievements-input:disabled + .form__achievements-label {
+  opacity: 0.3;
 }
 
 .form__achievements-label--1 {
@@ -551,6 +555,10 @@
   left: 13px;
   display: inline-block;
   content: "";
+}
+
+.form__app-input:disabled + .form__app-label {
+  opacity: 0.3;
 }
 
 .form__app-label:hover::before,
