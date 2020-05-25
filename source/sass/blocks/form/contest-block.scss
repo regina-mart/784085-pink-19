@@ -84,11 +84,21 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
+    margin: 0 auto;
     margin-top: 93px;
+    width: 490px;
   }
 
   @media (min-width: $desktop-width) {
     display: inline;
+  }
+}
+
+.contest-block__promo-text-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
