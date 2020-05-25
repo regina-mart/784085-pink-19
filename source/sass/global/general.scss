@@ -22,17 +22,17 @@ a {
 }
 
 .body-wrapper {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 660px;
+  // }
+  //
+  // @media (min-width: $desktop-width) {
+  //   width: 1200px;
+  // }
 }
 
 .app-block,

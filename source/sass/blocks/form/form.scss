@@ -330,20 +330,20 @@
   }
 }
 
-.form__fieldset-app,
-.form__fieldset-achievements,
-.form__fieldset-contacts,
-.form__fieldset-emotions {
-  border: none;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
-    margin: 0 auto;
-  }
-}
+// .form__fieldset-app,
+// .form__fieldset-achievements,
+// .form__fieldset-contacts,
+// .form__fieldset-emotions {
+//   border: none;
+//   padding: 0;
+//   margin: 0;
+//
+//   @media (min-width: $tablet-width) {
+//     border: 2px solid #e5e5e5;
+//     border-radius: 3px;
+//     margin: 0 auto;
+//   }
+// }
 
 .legend {
   display: none;
