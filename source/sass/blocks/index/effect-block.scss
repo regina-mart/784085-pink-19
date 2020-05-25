@@ -25,6 +25,7 @@
     margin-top: 36px;
     margin-bottom: 97px;
     margin-left: 71px;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,20 +68,29 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 36px;
+    display: inline-block;
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
 
 .effect-block__text {
   @media (min-width: $tablet-width) {
     line-height: 23px;
+    width: 296px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 33px;
+    width: 523px;
   }
 }
+
 
 .effect-block__link {
   @media (min-width: $tablet-width) {
@@ -91,11 +101,5 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-  }
-}
-
-.effect-block-br-none {
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }

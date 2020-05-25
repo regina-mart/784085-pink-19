@@ -150,6 +150,10 @@
     order: 2;
     margin-top: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+  }
 }
 
 .reviews-block__name {
@@ -183,6 +187,7 @@
 .reviews-block__text {
   font-size: 14px;
   line-height: 30px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -192,8 +197,9 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    margin: 0 auto;
     margin-top: 51px;
-    width: 940px;
+    width: 688px;
   }
 }
 
