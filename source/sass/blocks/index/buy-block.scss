@@ -252,7 +252,7 @@
   }
 }
 
-.slide-toggle {
+.buy-block__slider-toggle {
   position: relative;
   content: "";
   display: inline-block;
@@ -273,7 +273,7 @@
   }
 }
 
-.slide-toggle--active::after {
+.buy-block__slider-toggle--active::after {
   content: "";
   position: absolute;
   top: -2px;

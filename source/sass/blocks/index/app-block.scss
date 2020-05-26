@@ -43,6 +43,18 @@
   }
 }
 
+.a1 {
+  // margin-left: 39px;
+
+  @media (min-width: $tablet-width) {
+  // width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 940px;
+
+  }
+}
 .app-block__image-container {
   position: relative;
 }
@@ -75,6 +87,7 @@
   display: inline-block;
   margin: 0;
   width: 239px;
+  // width: 320px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -91,7 +104,7 @@
   }
 }
 
-.container-content {
+.app-block__container-content {
   margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 55px;
