@@ -70,6 +70,7 @@
     line-height: 36px;
     display: inline-block;
     width: 171px;
+    font-weight: 700;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +88,8 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 33px;
-    width: 523px;
+    margin-top: 23px;
+    width: 530px;
   }
 }
 

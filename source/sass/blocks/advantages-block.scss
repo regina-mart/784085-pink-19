@@ -144,10 +144,13 @@
 .advantages-block__text-bold {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    width: 222px;
+    display: inline-block;
   }
 }
 
@@ -186,7 +189,8 @@
 
 .advantages-block__text--3 {
   @media (min-width: $desktop-width) {
-    width: 223px;
+    width: 224px;
+    margin-left: -7px;
   }
 }
 
