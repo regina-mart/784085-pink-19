@@ -7,6 +7,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .form__achievements,
@@ -47,8 +52,6 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-left: 249px;
-    // margin-left: 300px;
     margin-right: 0;
     margin-bottom: 0;
   }
@@ -123,7 +126,7 @@
   @media (min-width: $desktop-width) {
     width: 431px;
     margin: 0;
-    margin-left: 70px;
+    margin-left: 69px;
     margin-top: 66px;
   }
 }
