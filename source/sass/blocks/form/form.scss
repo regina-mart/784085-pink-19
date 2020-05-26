@@ -41,8 +41,9 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-left: 129px;
+    margin-left: 249px;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -113,6 +114,9 @@
 
   @media (min-width: $desktop-width) {
     width: 431px;
+    margin: 0;
+    margin-left: 70px;
+    margin-top: 66px;
   }
 }
 
@@ -160,8 +164,9 @@
 .form__text--contacts {
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-left: 80px;
-    margin-top: 16px;
+    // margin-left: 80px;
+    margin-top: -43px;
+    width: 142px;
   }
 
   @media (min-width: $desktop-width) {
@@ -196,10 +201,14 @@
     margin: 0 auto;
     width: 320px;
     padding-left: 30px;
-padding-right: 30px;
-position: absolute;
-top: -10px;
-left: 121px;
+    padding-right: 30px;
+    position: absolute;
+    top: -10px;
+    left: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 24px;
   }
 }
 
@@ -216,6 +225,10 @@ left: 121px;
     top: -10px;
     left: 170px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 24px;
+  }
 }
 
 .caption-division--4 {
@@ -231,6 +244,10 @@ left: 121px;
     top: -10px;
     left: 170px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 329px;
+  }
 }
 
 .caption-division--5 {
@@ -245,6 +262,10 @@ left: 121px;
     left: 89px;
     width: 380px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 24px;
+  }
 }
 
 .form__achievements-list,
@@ -255,7 +276,11 @@ left: 121px;
 }
 
 .form__achievements-list {
-  margin-top: 53px;
+  margin-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -414,181 +439,163 @@ left: 121px;
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -4px;
+    margin-top: 64px;
   }
 }
-
-// .form__fieldset-app,
-// .form__fieldset-achievements,
-// .form__fieldset-contacts,
-// .form__fieldset-emotions {
-//   border: none;
-//   padding: 0;
-//   margin: 0;
-//
-//   @media (min-width: $tablet-width) {
-//     border: 2px solid #e5e5e5;
-//     border-radius: 3px;
-//     margin: 0 auto;
-//   }
-// }
-
-// .legend {
-//   display: none;
-//
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//     text-align: center;
-//     font-size: 14px;
-//     line-height: 30px;
-//     text-transform: uppercase;
-//     color: $color-pink;
-//     padding-left: 30px;
-//     padding-right: 30px;
-//     margin: 0 auto;
-//   }
-// }
-
-// .form__fieldset-contacts {
-//   margin-top: 30px;
-//   margin-bottom: 15px;
-//
-//   @media (min-width: $tablet-width) {
-//     order: 3;
-//     margin-top: 52px;
-//     padding-bottom: 33px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     padding-bottom: 18px;
-//   }
-// }
 
 .form__phone,
 .form__email {
   flex-direction: column-reverse;
   flex-wrap: wrap;
-}
 
-.form__phone-input,
-.form__email-input {
   @media (min-width: $tablet-width) {
-    width: 439px;
-    box-sizing: border-box;
+    order: 3;
+    // margin-top: 64px;
+    // padding-bottom: 32px;
+    width: 464px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 313px;
-  }
 }
 
-.form__phone-input {
-  @media (min-width: $tablet-width) {
-    margin-top: 45px;
-    margin-bottom: 44px;
-  }
+.form__phone-label {
 
-  @media (min-width: $desktop-width) {
-
-  }
 }
-.form__email-input {
-  @media (min-width: $tablet-width) {
-    margin-top: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 12px;
-  }
-}
-
+//
+// .form__phone-input,
+// .form__email-input {
+//   @media (min-width: $tablet-width) {
+//     width: 439px;
+//     box-sizing: border-box;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     width: 313px;
+//   }
+// }
+//
+// .form__phone-input {
+//   @media (min-width: $tablet-width) {
+//     margin-top: 31px;
+//     margin-bottom: 44px;
+//     margin-left: 60px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//
+//   }
+// }
+// .form__email-input {
+//   @media (min-width: $tablet-width) {
+//     margin-top: 21px;
+//     margin-left: 60px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     margin-left: 12px;
+//   }
+// }
+//
 .form__phone-pseudo-element,
 .form__email-pseudo-element {
-  margin: 0 auto;
+  // margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-    margin-left: 60px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   position: relative;
+  //   margin-left: 60px;
+  // }
+}
+.form__phone-pseudo-element {
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 14px;
+  margin-left: 60px;
 }
 
-.form__phone-pseudo-element::before {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    top: 66px;
-    left: 458px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 52px;
-    left: 333px;
-  }
+.form__email-pseudo-element {
+  margin-top: 27px;
+  margin-left: 60px;
 }
-
-.form__phone-pseudo-element::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    background-color: #e5e5e5;
-    width: 60px;
-    height: 60px;
-    margin-top: -107px;
-    margin-left: 437px;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -107px;
-    margin-left: 311px;
-  }
-}
-
-.form__email-pseudo-element::before {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 18px;
-    height: 13px;
-    position: absolute;
-    top: 60px;
-    left: 459px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 57px;
-    left: 346px;
-  }
-}
-
-.form__email-pseudo-element::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    background-color: #e5e5e5;
-    width: 60px;
-    height: 60px;
-    margin-top: -63px;
-    margin-left: 436px;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -63px;
-    margin-left: 323px;
-  }
-}
+// .form__phone-pseudo-element::before {
+//   @media (min-width: $tablet-width) {
+//     background-image: url("../img/icon-phone.svg");
+//     background-repeat: no-repeat;
+//     content: "";
+//     display: inline-block;
+//     vertical-align: top;
+//     width: 20px;
+//     height: 19px;
+//     position: absolute;
+//     top: 53px;
+//     right: 82px;
+//     z-index: 1;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     top: 52px;
+//     left: 333px;
+//   }
+// }
+//
+// .form__phone-pseudo-element::after {
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     display: block;
+//     background-color: #e5e5e5;
+//     width: 60px;
+//     height: 60px;
+//     margin-top: -107px;
+//     margin-left: 437px;
+//     border: 1px solid #e5e5e5;
+//     border-radius: 2px;
+//     position: absolute;
+//     top: 31px;
+//     right: 60px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     // margin-top: -107px;
+//     margin-left: 312px;
+//   }
+// }
+//
+// .form__email-pseudo-element::before {
+//   @media (min-width: $tablet-width) {
+//     background-image: url("../img/icon-mail.svg");
+//     background-repeat: no-repeat;
+//     content: "";
+//     display: inline-block;
+//     vertical-align: top;
+//     width: 18px;
+//     height: 13px;
+//     position: absolute;
+//     top: 60px;
+//     left: 459px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     top: 57px;
+//     left: 346px;
+//   }
+// }
+//
+// .form__email-pseudo-element::after {
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     display: block;
+//     background-color: #e5e5e5;
+//     width: 60px;
+//     height: 60px;
+//     margin-top: -63px;
+//     margin-left: 436px;
+//     border: 1px solid #e5e5e5;
+//     border-radius: 2px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     margin-top: -63px;
+//     margin-left: 323px;
+//   }
+// }
 
 .form__app-list {
   padding-top: 36px;
@@ -601,7 +608,7 @@ left: 121px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 54px;
     padding-left: 72px;
   }
 }
@@ -788,47 +795,3 @@ left: 121px;
     display: inline;
   }
 }
-
-
-// .form__fieldset-app {
-//   margin-top: 28px;
-//
-//   @media (min-width: $tablet-width) {
-//     order: 2;
-//     margin-top: 50px;
-//     padding-bottom: 13px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     width: 431px;
-//     margin-left: 69px;
-//     margin-right: 0;
-//   }
-// }
-
-// .form__fieldset-achievements {
-//   margin-top: 42px;
-//
-//   @media (min-width: $tablet-width) {
-//     order: 4;
-//     margin-top: 36px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     margin-top: 38px;
-//   }
-// }
-//
-// .form__fieldset-emotions {
-//   @media (min-width: $tablet-width) {
-//     order: 5;
-//     margin-top: 51px;
-//     width: 620px;
-//     padding-bottom: 51px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     width: 940px;
-//     padding-bottom: 44px;
-//   }
-// }
