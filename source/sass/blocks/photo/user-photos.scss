@@ -263,10 +263,6 @@
   width: 13px;
   height: 12px;
   margin-top: 5px;
-
-  @media (min-width: $desktop-width) {
-    // margin-left: 5px;
-  }
 }
 
 .user-photo__like-text {
@@ -305,17 +301,11 @@
     order: 1;
     margin-top: 16px;
   }
-
-  @media (min-width: $desktop-width) {
-    // margin: 0;
-    // margin-top: 16px;
-  }
 }
 
 .user-photo__text--chief {
   @media (min-width: $tablet-width) {
     order: 3;
-    // margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -327,11 +317,5 @@
   @media (min-width: $tablet-width) {
     order: 2;
     margin-top: 17px;
-    // margin-left: 305px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-top: 26px;
-    // margin-left: 622px;
   }
 }

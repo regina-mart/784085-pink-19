@@ -43,18 +43,17 @@
   }
 }
 
-.a1 {
-  // margin-left: 39px;
-
+.app-block__container {
   @media (min-width: $tablet-width) {
-  // width: 620px;
+  width: 620px;
+  margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 940px;
-
+    width: 940px;
   }
 }
+
 .app-block__image-container {
   position: relative;
 }
@@ -66,12 +65,12 @@
 
   @media (min-width: $tablet-width) {
     top: 72px;
-    left: 34px;
+    left: -40px;
   }
 
   @media (min-width: $desktop-width) {
     top: 209px;
-    left: 266px;
+    left: 17px;
   }
 }
 
@@ -87,20 +86,17 @@
   display: inline-block;
   margin: 0;
   width: 239px;
-  // width: 320px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
     margin: 0 auto;
-    margin-left: 104px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
     padding-top: 148px;
-    margin-left: 281px;
   }
 }
 
