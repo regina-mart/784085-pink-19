@@ -1,0 +1,102 @@
+.scale__line {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #000000;
+  width: 240px;
+  height: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    margin-bottom: 70px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.scale__line::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: #dddfe0;
+    content: "";
+    width: 275px;
+    height: 1px;
+    position: absolute;
+    top: 35px;
+    right: -19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    right: -30px;
+  }
+}
+
+.scale__range-circle {
+  display: block;
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  border: 2px solid $color-pink;
+
+  &:active {
+    background-color: $color-pink;
+  }
+}
+
+.scale__range-circle--1 {
+  position: absolute;
+  top: -6px;
+  right: 55px;
+
+  @media (min-width: $tablet-width) {
+    left: 146px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 71px;
+  }
+}
+
+.scale__range-circle--2 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 248px;
+  }
+}
+
+.scale__range-circle--3 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: absolute;
+    left: 96px;
+    top: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 161px;
+  }
+}
+
+.scale__line--secondary {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
