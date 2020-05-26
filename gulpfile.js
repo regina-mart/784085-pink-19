@@ -54,15 +54,6 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("copy-normalize", function () {
-  return gulp.src([
-    "source/normalize.css"
-  ], {
-    base: "source"
-  })
-    .pipe(gulp.dest("build/css"));
-});
-
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
@@ -87,7 +78,6 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "copy-normalize",
   "css",
   "sprite",
   "html"
