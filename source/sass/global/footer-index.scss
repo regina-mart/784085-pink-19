@@ -1,0 +1,80 @@
+.footer-index {
+  position: relative;
+}
+
+.footer-index::before {
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  height: 33px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 157px;
+  }
+}
+
+.footer-index__map {
+  position: relative;
+  z-index: 0;
+  background-color: #eae6dd;
+  width: 100%;
+  height: 200px;
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    height: 375px;
+    margin-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
+    margin-top: 21px;
+  }
+}
+
+.footer-index__map-interactive {
+  position: absolute;
+  width: 100%;
+  height: 197px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
+  }
+}
+
+.footer-index__map-img {
+  position: absolute;
+  width: 320px;
+  height: 197px;
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 500px;
+  }
+}

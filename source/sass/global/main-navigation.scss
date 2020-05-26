@@ -1,8 +1,3 @@
-.page-header {
-  position: relative;
-  z-index: 5;
-}
-
 .main-navigation__header {
   background-color: $color-dark;
   display: flex;
@@ -66,23 +61,23 @@
   }
 }
 
-.letter,
+.logo-img__letter-header,
 .logo-img__glasses-tablet,
 .logo-img__glasses-desktop {
   fill: #ffffff;
 }
 
-.main-navigation__logo-link:hover .letter,
-.main-navigation__logo-link:hover .glasses-tablet,
-.main-navigation__logo-link:hover .glasses-desktop {
+.main-navigation__logo-link:hover .logo-img__letter-header,
+.main-navigation__logo-link:hover .logo-img__glasses-tablet-header,
+.main-navigation__logo-link:hover .logo-img__glasses-desktop-header {
   fill: $color-pink;
 }
 
 
-.main-navigation__logo-link:active .letter,
-.main-navigation__logo-link:active .glasses-tablet,
-.main-navigation__logo-link:active .glasses-desktop,
-.main-navigation__logo-link:active .stars {
+.main-navigation__logo-link:active .logo-img__letter-header,
+.main-navigation__logo-link:active .logo-img__glasses-tablet-header,
+.main-navigation__logo-link:active .logo-img__glasses-desktop-header,
+.main-navigation__logo-link:active .logo-img__stars-header {
   fill: #ffffff;
   opacity: 0.3;
 }
