@@ -40,47 +40,6 @@
   }
 }
 
-.logo-img__glasses-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.logo-img__glasses-desktop,
-.logo-img__stars {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.logo-img__letter-header,
-.logo-img__glasses-tablet,
-.logo-img__glasses-desktop {
-  fill: #ffffff;
-}
-
-.main-navigation__logo-link:hover .logo-img__letter-header,
-.main-navigation__logo-link:hover .logo-img__glasses-tablet-header,
-.main-navigation__logo-link:hover .logo-img__glasses-desktop-header {
-  fill: $color-pink;
-}
-
-
-.main-navigation__logo-link:active .logo-img__letter-header,
-.main-navigation__logo-link:active .logo-img__glasses-tablet-header,
-.main-navigation__logo-link:active .logo-img__glasses-desktop-header,
-.main-navigation__logo-link:active .logo-img__stars-header {
-  fill: #ffffff;
-  opacity: 0.3;
-}
 
 .main-navigation__toggle {
   width: 56px;
