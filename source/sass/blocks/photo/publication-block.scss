@@ -24,12 +24,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 69px;
-    width: 660px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 66px;
-    width: 1200px;
+    // width: 1200px;
   }
 }
 
