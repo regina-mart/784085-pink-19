@@ -75,7 +75,8 @@
   border: 2px solid #e5e5e5;
   border-radius: 3px;
   padding-left: 20px;
-  padding-top: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   height: 64px;
   width: 100%;
   margin-top: 8px;
@@ -472,7 +473,7 @@
   }
 }
 
-.form__email-label  {
+.form__email-label {
   @media (min-width: $tablet-width) {
     text-align: left;
     margin: 0;

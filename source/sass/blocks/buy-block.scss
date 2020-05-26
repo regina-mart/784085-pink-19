@@ -6,7 +6,6 @@
 .buy-block::before {
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: contain;
   content: "";
   display: inline-block;
   vertical-align: top;
@@ -15,7 +14,6 @@
   position: absolute;
   top: -13px;
   left: -2px;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
