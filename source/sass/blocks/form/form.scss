@@ -74,7 +74,7 @@
   border: 2px solid #e5e5e5;
   border-radius: 3px;
   padding-left: 20px;
-  padding-top: 13px;
+  padding-top: 9px;
   height: 64px;
   width: 100%;
   margin-top: 8px;
@@ -88,10 +88,6 @@
 
   &:focus {
     border: 2px solid $color-pink;
-  }
-
-  @media (min-width: $tablet-width) {
-    // margin-bottom: 44px;
   }
 }
 
@@ -110,6 +106,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 19px;
   }
+}
+
+.input-field {
+  font-size: 18px;
 }
 
 .input-field::placeholder {
@@ -562,7 +562,7 @@
 
   @media (min-width: $desktop-width) {
     top: 45px;
-    left: 373px;
+    left: 375px;
   }
 }
 
@@ -604,7 +604,7 @@
   @media (min-width: $desktop-width) {
     @media (min-width: $desktop-width) {
       top: 45px;
-      left: 818px;
+      left: 820px;
     }
   }
 }
